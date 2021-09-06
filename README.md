@@ -94,11 +94,11 @@ The website should display the Formula 1 calendar, daily weather forecast data, 
 
 #### Information architecture
 
-placeholder
+Every page has a hamburger menu icon with navigation links. The homepage advertises the purpose of the website and provides additional navigation to the register page. The Formula 1 calendar page has navigation to each (active) event. The individual event pages have navigation to the hourly and daily weather data pages.
 
 #### Interaction design
 
-placeholder
+Depending on their device, users could see through visible indicators like changes of colour and/or changing mouse pointers whether something is clickable. Icons such as an arrow pointing down indicate to users that an element can be expanded. Users with touchscreens can swipe up and down to scroll through the page, and they can (double)tap to select buttons and navigation elements. No audio will be used in this website.
 
 ### Skeleton
 
