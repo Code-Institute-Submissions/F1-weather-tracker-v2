@@ -74,7 +74,11 @@ The goal for the website is to provide Formula 1 fans with accurate weather data
 
 #### User stories
 
-placeholder
+- As a **visitor**, I would like **to see the Formula 1 calendar**, so that **I know which events are happening soon**.
+
+- As a **premium member**, I would like **to access hourly weather data**, so that **I can better estimate under what weather conditions the race will be held**.
+
+- As a **site owner**, I would like **to have an authentication system**, so that **I can give customers premium membership status**.
 
 ### Scope
 
