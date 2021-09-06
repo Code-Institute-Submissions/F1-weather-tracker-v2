@@ -1,0 +1,19 @@
+{
+    "bracketSpacing": true,
+    "htmlWhitespaceSensitivity": "css",
+    "trailingComma":"none",
+    "useTabs": true,
+    "tabWidth": 4,
+    "semi": true,
+    "vueIndentScriptAndStyle": false,
+    "singleQuote": false,
+    "overrides": [
+        {
+            "files": "*.css",
+            "options": {
+                "useTabs": false,
+                "tabWidth": 2
+            }
+        }
+    ]
+}
