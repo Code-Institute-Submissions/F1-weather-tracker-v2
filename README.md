@@ -84,11 +84,11 @@ The goal for the website is to provide Formula 1 fans with accurate weather data
 
 #### Functional specifications
 
-placeholder
+The website should have navigation to switch between all the pages. Content on the website should support different screen sizes. Wherever appropriate and or possible, visible indicators should be shown to users when they can perform an action on the website (like clicking a link or a button).
 
 #### Content requirements
 
-placeholder
+The website should display the Formula 1 calendar, daily weather forecast data, and hourly weather forecast data. There should be pages for registering and logging in. There should be a page where customers can purchase premium membership.
 
 ### Structure
 
