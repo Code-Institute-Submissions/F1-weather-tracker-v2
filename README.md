@@ -102,11 +102,13 @@ Depending on their device, users could see through visible indicators like chang
 
 ### Skeleton
 
-placeholder
+For all screen sizes the skeleton should be quite the same. The header will have a hamburger menu icon on the left, and a logo or some text in the center. The footer will probably reference the weather API. The homepage displays an image with some advertisement and navigation to the register page. The Formula 1 calendar page has a card for each event. Each individual event page has two cards, one for the daily weather forecast and one for the hourly weather forecast. The daily weather forecast page has a country flag and track name at the top, underneath that the local time of the event location is displayed, underneath that the event schedule is displayed, underneath that there are seven cards that display weather data for the next seven days. The hourly weather forecast page is the same as the daily weather forecast page, except that there are twenty-four cards with weather data instead of seven, one for each hour of the current day.
 
 #### Wireframes
 
-placeholder
+To see all the wireframes in a single PDF [click here](docs/wireframes/f1weather_wireframes.pdf).
+
+To see separate PNG image files of the wireframes check the docs/wireframes folder.
 
 ### Surface
 
