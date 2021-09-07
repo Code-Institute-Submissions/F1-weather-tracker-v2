@@ -114,15 +114,17 @@ To see separate PNG image files of the wireframes check the docs/wireframes fold
 
 #### Colours
 
-placeholder
+The main colours will be dark gray and yellow again, just as with my milestone two project. I will use the blue colour for weather data such as precipitation and rain. The red colour will most likely be used for temperature data. Instead of making the entire website dark gray again by using it for the background, I will use a regular white colour for a cleaner look and better visible separation between elements. The green colour will be used for minimum temperature in the daily weather forecast data.
+
+![Colour palette](docs/colour-palette/colour-palette.png)
 
 #### Typography
 
-placeholder
+To be determined.
 
 #### Uniformity
 
-placeholder
+To keep the website looking uniform I will do my best to make sure that all related content throughout the website is consistent in font-size and styling. The positioning of elements and content should be consistent in height, padding, and spacing. I'm also using either grid, flexbox or both to present the content in a logical order, either through custom CSS or through external styling frameworks.
 
 **_[Back to top](#contents)_**
 
