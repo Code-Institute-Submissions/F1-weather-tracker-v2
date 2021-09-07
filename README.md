@@ -152,7 +152,9 @@ placeholder
 
 ## Database schema
 
-placeholder
+For this project we were required to create a relational database. In total I set up 5 entities, which you can see in the image below. Primary keys are indicated with PK, and foreign keys with FK.
+
+![Database schema](docs/database/database-schema.png)
 
 **_[Back to top](#contents)_**
 
