@@ -1,0 +1,19 @@
+/* ------ set clean elements styling by removing default margins and paddings ----- */
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ------ set easy unit conversion for REM font size (1 REM = 10px) that still allows font scaling in browser ----- */
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+}

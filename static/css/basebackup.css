@@ -1,0 +1,64 @@
+/* ------ set clean elements styling by removing default margins and paddings ----- */
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ------ set easy unit conversion for REM font size (1 REM = 10px) that still allows font scaling in browser ----- */
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+}
+
+/* ----- common styles ----- */
+
+.flex-center-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#base-body {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #61da10;
+}
+
+#base-header {
+  width: 100%;
+  background-color: #211f22;
+  color: #ffc929;
+  min-height: 50px;
+  justify-content: center;
+}
+
+#base-header h1 {
+  font-size: 2rem;
+}
+
+#content-container {
+  width: 70%;
+  flex-grow: 1;
+  background-color: rgb(255, 86, 86);
+}
+
+#base-footer {
+  width: 100%;
+  background-color: #211f22;
+  color: #ffc929;
+  font-size: 2.3rem;
+  min-height: 50px;
+  justify-content: center;
+}
+
+.colors {
+  color: #A9ADC76;
+}

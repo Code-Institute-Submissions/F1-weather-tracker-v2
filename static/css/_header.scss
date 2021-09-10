@@ -1,0 +1,13 @@
+/* --- header --- */
+
+#base-header {
+  width: 100%;
+  background-color: $cGray;
+  color: $cYellow;
+  min-height: 50px;
+  justify-content: center;
+
+  h1 {
+    font-size: 2rem;
+  }
+}
