@@ -132,6 +132,44 @@ body {
       -ms-flex-positive: 1;
           flex-grow: 1;
   background-color: #e6e6e6;
+  /* remove later */
+}
+
+/* --- media queries --- */
+@media (min-width: 2400px) {
+  #content-container {
+    width: 40%;
+  }
+}
+
+@media (min-width: 2200px) and (max-width: 2400px) {
+  #content-container {
+    width: 45%;
+  }
+}
+
+@media (min-width: 2000px) and (max-width: 2200px) {
+  #content-container {
+    width: 50%;
+  }
+}
+
+@media (min-width: 1800px) and (max-width: 2000px) {
+  #content-container {
+    width: 55%;
+  }
+}
+
+@media (min-width: 1600px) and (max-width: 1800px) {
+  #content-container {
+    width: 60%;
+  }
+}
+
+@media (min-width: 1400px) and (max-width: 1600px) {
+  #content-container {
+    width: 65%;
+  }
 }
 
 /* --- footer --- */
@@ -144,5 +182,117 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+/* --- allauth templates --- */
+/* login.html */
+.auth-h1 {
+  margin: 16px 0px;
+}
+
+.auth-p {
+  margin-bottom: 16px;
+}
+
+.auth-a {
+  color: #FF4040;
+  text-decoration: none;
+  font-weight: 300;
+}
+
+.auth-a:hover {
+  font-weight: bold;
+}
+
+.auth-p, .auth-a {
+  font-size: 1.6rem;
+}
+
+.auth-login-form {
+  width: 50%;
+  padding: 20px;
+  margin-top: 16px;
+  border: 2px solid #211F22;
+  border-radius: 10px;
+}
+
+/* Allauth form formatting */
+.auth-login-form p {
+  margin-bottom: 12px;
+  color: #FFC929;
+  /* text-secondary */
+  font-size: 1.8rem;
+  font-weight: 800;
+}
+
+.auth-login-form input {
+  border: 3px solid #211F22;
+  border-radius: 0px;
+  padding: 5px;
+  width: 100%;
+  background-color: #f3f3f3;
+}
+
+.auth-login-form label:not([for="id_remember"]) {
+  display: none;
+}
+
+.auth-login-form input::-webkit-input-placeholder {
+  color: #FFC929;
+}
+
+.auth-login-form input:-ms-input-placeholder {
+  color: #FFC929;
+}
+
+.auth-login-form input::-ms-input-placeholder {
+  color: #FFC929;
+}
+
+.auth-login-form input::placeholder {
+  color: #FFC929;
+}
+
+.auth-login-form button,
+.auth-login-form input[type="submit"] {
+  /* btn */
+  display: inline-block;
+  margin-left: 12px;
+  font-weight: 600;
+  text-transform: lowercase;
+  color: #FFC929;
+  text-align: center;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-color: #211F22;
+  border: 1px solid #211F22;
+  padding: 0.5rem 1.5rem;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.auth-login-form button:hover,
+.auth-login-form input[type="submit"]:hover {
+  color: #FFC929;
+  border-color: #211F22;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+.auth-login-form a {
+  color: #FF4040;
+  /* text-info */
+  text-decoration: none;
+  font-size: 1.4rem;
+  font-weight: 300;
+}
+
+.auth-login-form a:hover {
+  font-weight: bold;
 }
 /*# sourceMappingURL=base.css.map */
