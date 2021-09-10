@@ -131,6 +131,7 @@ body {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
+  padding: 12px;
   background-color: #e6e6e6;
   /* remove later */
 }
@@ -208,7 +209,7 @@ body {
   font-size: 1.6rem;
 }
 
-.auth-login-form {
+.auth-form {
   width: 50%;
   padding: 20px;
   margin-top: 16px;
@@ -216,8 +217,12 @@ body {
   border-radius: 10px;
 }
 
+.auth-p-sub {
+  margin: 16px 0px;
+}
+
 /* Allauth form formatting */
-.auth-login-form p {
+.auth-form p {
   margin-bottom: 12px;
   color: #FFC929;
   /* text-secondary */
@@ -225,7 +230,7 @@ body {
   font-weight: 800;
 }
 
-.auth-login-form input {
+.auth-form input {
   border: 3px solid #211F22;
   border-radius: 0px;
   padding: 5px;
@@ -233,28 +238,28 @@ body {
   background-color: #f3f3f3;
 }
 
-.auth-login-form label:not([for="id_remember"]) {
+.auth-form label:not([for="id_remember"]) {
   display: none;
 }
 
-.auth-login-form input::-webkit-input-placeholder {
+.auth-form input::-webkit-input-placeholder {
   color: #FFC929;
 }
 
-.auth-login-form input:-ms-input-placeholder {
+.auth-form input:-ms-input-placeholder {
   color: #FFC929;
 }
 
-.auth-login-form input::-ms-input-placeholder {
+.auth-form input::-ms-input-placeholder {
   color: #FFC929;
 }
 
-.auth-login-form input::placeholder {
+.auth-form input::placeholder {
   color: #FFC929;
 }
 
-.auth-login-form button,
-.auth-login-form input[type="submit"] {
+.auth-form button,
+.auth-form input[type="submit"] {
   /* btn */
   display: inline-block;
   margin-left: 12px;
@@ -276,15 +281,15 @@ body {
   cursor: pointer;
 }
 
-.auth-login-form button:hover,
-.auth-login-form input[type="submit"]:hover {
+.auth-form button:hover,
+.auth-form input[type="submit"]:hover {
   color: #FFC929;
   border-color: #211F22;
   -webkit-transform: scale(1.05);
           transform: scale(1.05);
 }
 
-.auth-login-form a {
+.auth-form a {
   color: #FF4040;
   /* text-info */
   text-decoration: none;
@@ -292,7 +297,7 @@ body {
   font-weight: 300;
 }
 
-.auth-login-form a:hover {
+.auth-form a:hover {
   font-weight: bold;
 }
 /*# sourceMappingURL=base.css.map */

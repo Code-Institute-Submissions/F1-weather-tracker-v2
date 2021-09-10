@@ -23,7 +23,7 @@
   font-size: 1.6rem;
 }
 
-.auth-login-form {
+.auth-form {
   width: 50%;
   padding: 20px;
   margin-top: 16px;
@@ -31,16 +31,20 @@
   border-radius: 10px;
 }
 
+.auth-p-sub {
+  margin: 16px 0px;
+}
+
 /* Allauth form formatting */
 
-.auth-login-form p {
+.auth-form p {
   margin-bottom: 12px;
   color: $cYellow; /* text-secondary */
   font-size: 1.8rem;
   font-weight: 800;
 }
 
-.auth-login-form input {
+.auth-form input {
   border: 3px solid $cGray;
   border-radius: 0px;
   padding: 5px;
@@ -48,16 +52,16 @@
   background-color:#f3f3f3;
 }
 
-.auth-login-form label:not([for="id_remember"]) {
+.auth-form label:not([for="id_remember"]) {
   display: none;
 }
 
-.auth-login-form input::placeholder {
+.auth-form input::placeholder {
   color: $cYellow;
 }
 
-.auth-login-form button,
-.auth-login-form input[type="submit"] {
+.auth-form button,
+.auth-form input[type="submit"] {
   /* btn */
   display: inline-block;
   margin-left: 12px;
@@ -79,14 +83,14 @@
   cursor: pointer;
 }
 
-.auth-login-form button:hover,
-.auth-login-form input[type="submit"]:hover {
+.auth-form button:hover,
+.auth-form input[type="submit"]:hover {
   color: $cYellow;
   border-color: $cGray;
   transform: scale(1.05);
 }
 
-.auth-login-form a {
+.auth-form a {
   color: $cRed; /* text-info */
   text-decoration: none;
   font-size: 1.4rem;
