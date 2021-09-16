@@ -56,3 +56,11 @@
     font-style: italic;
   }
 }
+
+.inactive {
+  background: #464646;
+  &:hover {
+    cursor: default;
+    transform: none;
+  }
+}

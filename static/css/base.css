@@ -459,4 +459,14 @@ body {
   font-weight: bold;
   font-style: italic;
 }
+
+.inactive {
+  background: #464646;
+}
+
+.inactive:hover {
+  cursor: default;
+  -webkit-transform: none;
+          transform: none;
+}
 /*# sourceMappingURL=base.css.map */
