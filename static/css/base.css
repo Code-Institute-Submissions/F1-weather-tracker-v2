@@ -301,6 +301,41 @@ body {
   font-weight: bold;
 }
 
+.calendar-ad {
+  width: 300px;
+  height: 140px;
+  border: 3px solid #211F22;
+  border-radius: 10px;
+  padding: 16px;
+  background: #ffec95;
+  margin-top: 16px;
+}
+
+.calendar-ad p {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #FF4040;
+  margin-bottom: 16px;
+  text-align: justify;
+  text-justify: center;
+}
+
+.calendar-ad a {
+  background-color: #211F22;
+  color: #FF4040;
+  padding: 6px;
+  border-radius: 5px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1.8rem;
+  font-weight: 400;
+}
+
+.calendar-ad a:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
 .register-ad {
   width: 300px;
   height: 140px;
@@ -308,6 +343,7 @@ body {
   border-radius: 10px;
   padding: 16px;
   background: #52496e;
+  margin-top: 16px;
 }
 
 .register-ad p {

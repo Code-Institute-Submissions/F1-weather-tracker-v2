@@ -1,3 +1,37 @@
+.calendar-ad {
+  width: 300px;
+  height: 140px;
+  border: 3px solid $cGray;
+  border-radius: 10px;
+	padding: 16px;
+	background: #ffec95;
+  margin-top: 16px;
+
+  p {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: $cRed;
+		margin-bottom: 16px;
+		text-align: justify;
+    text-justify: center;
+  }
+
+  a {
+		background-color: $cGray;
+    color: $cRed;
+		padding: 6px;
+		border-radius: 5px;
+    text-decoration: none;
+		text-transform: uppercase;
+    font-size: 1.8rem;
+    font-weight: 400;
+
+    &:hover {
+			transform: scale(1.05);
+    }
+  }
+}
+
 .register-ad {
   width: 300px;
   height: 140px;
@@ -5,6 +39,7 @@
   border-radius: 10px;
 	padding: 16px;
 	background: #52496e;
+  margin-top: 16px;
 
   p {
     font-size: 1.6rem;
