@@ -132,8 +132,9 @@ body {
       -ms-flex-positive: 1;
           flex-grow: 1;
   padding: 12px;
-  background-color: #e6e6e6;
-  /* remove later */
+  /*background-color: darken($cWhite, 10%); remove later */
+  border-left: 1px dashed red;
+  border-right: 1px dashed red;
 }
 
 /* --- media queries --- */
@@ -369,5 +370,93 @@ body {
 .register-ad a:hover {
   -webkit-transform: scale(1.05);
           transform: scale(1.05);
+}
+
+.calendar-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.event-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 160px;
+  height: 160px;
+  border-radius: 10px;
+  overflow: hidden;
+  padding: 0 0 6px 0;
+  margin: 16px;
+  background: #ececec;
+  -webkit-box-shadow: 2px 2px 3px 2px #797979;
+          box-shadow: 2px 2px 3px 2px #797979;
+}
+
+.event-container:hover {
+  cursor: pointer;
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
+}
+
+.circuit-img-container {
+  overflow: hidden;
+  width: 100%;
+  height: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: red;
+  padding: 0;
+}
+
+.circuit-img-container img {
+  display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.circuit-info-container {
+  text-align: center;
+  margin: 3px 0px;
+}
+
+.circuit-info-container p {
+  overflow-wrap: break-word;
+  color: #211F22;
+  font-size: 1.8rem;
+  font-weight: bold;
+  font-style: italic;
 }
 /*# sourceMappingURL=base.css.map */

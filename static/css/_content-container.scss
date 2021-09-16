@@ -4,7 +4,9 @@
   width: 70%;
   flex-grow: 1;
   padding: 12px;
-  background-color: darken($cWhite, 10%); /* remove later */
+  /*background-color: darken($cWhite, 10%); remove later */
+  border-left: 1px dashed red;
+  border-right: 1px dashed red;
 }
 
 /* --- media queries --- */

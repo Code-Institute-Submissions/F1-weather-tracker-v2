@@ -3,4 +3,111 @@
 
 {% block content %}
 <h1>Events calendar</h1>
+<div class="calendar-container">
+    <!-- Russia -->
+    <div class="event-container">
+        <div class="circuit-img-container">
+            <img src="/static/img/sochi.jpg" alt="Sochi Autodrom">
+        </div>
+        <div class="circuit-info-container">
+            <p>SEP 24-26</p>
+        </div>
+        <div class="circuit-info-container">
+            <p>{{ russia.city }}</p>
+        </div>
+        <div class="circuit-info-container">
+            <p>{{ russia.country }}</p>
+        </div>
+    </div>
+    <!-- Turkey -->
+    <div class="event-container">
+        <div class="circuit-img-container">
+            <img src="/static/img/istanbul.jpg" alt="Istanbul Park">
+        </div>
+        <div class="circuit-info-container">
+            <p>OCT 8-10</p>
+        </div>
+        <div class="circuit-info-container">
+            <p>{{ turkey.city }}</p>
+        </div>
+        <div class="circuit-info-container">
+            <p>{{ turkey.country }}</p>
+        </div>
+    </div>
+    <!-- United States -->
+    <div class="event-container">
+        <div class="circuit-img-container">
+            <img src="/static/img/austin.jpg" alt="Circuit of The Americas">
+        </div>
+        <div class="circuit-info-container">
+            <p>OCT 22-24</p>
+        </div>
+        <div class="circuit-info-container">
+            <p>{{ us.city }}</p>
+        </div>
+        <div class="circuit-info-container">
+            <p>{{ us.country }}</p>
+        </div>
+    </div>
+    <!-- Mexico -->
+    <div class="event-container">
+        <div class="circuit-img-container">
+            <img src="/static/img/mexico.jpg" alt="Autódromo Hermanos Rodríguez">
+        </div>
+        <div class="circuit-info-container">
+            <p>NOV 5-7</p>
+        </div>
+        <div class="circuit-info-container">
+            <p>{{ mexico.city }}</p>
+        </div>
+        <div class="circuit-info-container">
+            <p>{{ mexico.country }}</p>
+        </div>
+    </div>
+    <!-- Brazil -->
+    <div class="event-container">
+        <div class="circuit-img-container">
+            <img src="/static/img/brazil.jpg" alt="Autódromo José Carlos Pace">
+        </div>
+        <div class="circuit-info-container">
+            <p>NOV 12-14</p>
+        </div>
+        <div class="circuit-info-container">
+            <p>{{ brazil.city }}</p>
+        </div>
+        <div class="circuit-info-container">
+            <p>{{ brazil.country }}</p>
+        </div>
+    </div>
+    <!-- Saudi Arabia -->
+    <div class="event-container">
+        <div class="circuit-img-container">
+            <img src="/static/img/jeddah.jpg" alt="Jeddah Street Circuit">
+        </div>
+        <div class="circuit-info-container">
+            <p>DEC 3-5</p>
+        </div>
+        <div class="circuit-info-container">
+            <p>{{ sa.city }}</p>
+        </div>
+        <div class="circuit-info-container">
+            <p>{{ sa.country }}</p>
+        </div>
+    </div>
+    <!-- Abu Dhabi -->
+    <div class="event-container">
+        <div class="circuit-img-container">
+            <img src="/static/img/uae.jpg" alt="Yas Marina Circuit">
+        </div>
+        <div class="circuit-info-container">
+            <p>DEC 10-12</p>
+        </div>
+        <div class="circuit-info-container">
+            <p>{{ uae.city }}</p>
+        </div>
+        <div class="circuit-info-container">
+            <p>UAE</p>
+        </div>
+    </div>
+</div>
 {% endblock %}
