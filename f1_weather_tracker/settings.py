@@ -52,6 +52,7 @@ INSTALLED_APPS = [
     # local
     'accounts',
     'home',
+    'events',
 ]
 
 AUTH_USER_MODEL = 'accounts.CustomUser'  # custom user model
