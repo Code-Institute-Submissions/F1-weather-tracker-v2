@@ -33,5 +33,32 @@
 	}
 }
 
+.forecast-options-container {
+	margin-top: 16px;
+	flex-wrap: wrap;
 
+	.forecast-option {
+		height: 160px;
+		width: 160px;
+		background: lighten($cGray, 8%);
+		text-align: center;
+		color: $cYellow;
+		font-family: "Titillium+Web", sans-serif;
+		font-size: 2.6rem;
+		font-weight: 600;
+		margin: 32px;
+		border-radius: 10px;
+		box-shadow: 2px 2px 3px 2px #797979;
+
+		span {
+			font-size: 1.8rem;
+			font-style: italic;
+		}
+
+		&:hover {
+			cursor: pointer;
+			transform: scale(1.02);
+		}
+	}
+}
 

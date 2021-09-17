@@ -552,4 +552,36 @@ body {
   font-size: 2rem;
   font-weight: 700;
 }
+
+.forecast-options-container {
+  margin-top: 16px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.forecast-options-container .forecast-option {
+  height: 160px;
+  width: 160px;
+  background: #363237;
+  text-align: center;
+  color: #FFC929;
+  font-family: "Titillium+Web", sans-serif;
+  font-size: 2.6rem;
+  font-weight: 600;
+  margin: 32px;
+  border-radius: 10px;
+  -webkit-box-shadow: 2px 2px 3px 2px #797979;
+          box-shadow: 2px 2px 3px 2px #797979;
+}
+
+.forecast-options-container .forecast-option span {
+  font-size: 1.8rem;
+  font-style: italic;
+}
+
+.forecast-options-container .forecast-option:hover {
+  cursor: pointer;
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
+}
 /*# sourceMappingURL=base.css.map */
