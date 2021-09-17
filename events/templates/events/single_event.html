@@ -2,13 +2,12 @@
 {% load static %}
 
 {% block content %}
-<h1>Single event {{ event.event_id }}</h1>
-<div class="location-container">
-    <div class="location-flag">location-flag</div>
-    <div class="location-trackname">location-trackname</div>
-</div>
-<div class="weather-options-container">
-    <div class="hourly-weather">hourly-weather</div>
-    <div class="daily-weather">daily-weather</div>
+<div class="flag-trackname-container">
+    <div class="flag-container">
+        <img src="/static/img/{{ event.track_id }}-flag.png" alt="{{ event.country }} flag">
+    </div>
+    <div class="track-name-container flex-col-ca-cj">
+        <h3>{{ event.track_name }}</h3>
+    </div>
 </div>
 {% endblock %}
