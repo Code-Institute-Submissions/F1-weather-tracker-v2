@@ -62,9 +62,17 @@
 }
 
 .inactive {
-  background: #464646;
+  background: #686868;
   &:hover {
     cursor: default;
     transform: none;
   }
+}
+
+.past-event {
+  color: $cRed !important;
+}
+
+.future-event {
+  color: $cGreen !important;
 }

@@ -465,12 +465,20 @@ body {
 }
 
 .inactive {
-  background: #464646;
+  background: #686868;
 }
 
 .inactive:hover {
   cursor: default;
   -webkit-transform: none;
           transform: none;
+}
+
+.past-event {
+  color: #FF4040 !important;
+}
+
+.future-event {
+  color: #A9DC76 !important;
 }
 /*# sourceMappingURL=base.css.map */
