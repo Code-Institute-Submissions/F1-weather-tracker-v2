@@ -387,6 +387,10 @@ body {
       flex-wrap: wrap;
 }
 
+.calendar-container a {
+  text-decoration: none;
+}
+
 .event-container {
   display: -webkit-box;
   display: -ms-flexbox;

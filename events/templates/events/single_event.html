@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+<h1>Single event {{ event.event_id }}</h1>
+<div class="location-container">
+    <div class="location-flag">location-flag</div>
+    <div class="location-trackname">location-trackname</div>
+</div>
+<div class="weather-options-container">
+    <div class="hourly-weather">hourly-weather</div>
+    <div class="daily-weather">daily-weather</div>
+</div>
+{% endblock %}

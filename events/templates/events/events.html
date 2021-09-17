@@ -20,50 +20,56 @@
         </div>
     </div>
     <!-- Turkey -->
-    <div class="event-container">
-        <div class="circuit-img-container">
-            <img src="/static/img/istanbul.jpg" alt="Istanbul Park">
+    <a href="{% url 'single_event' turkey.event_id %}">
+        <div class="event-container">
+            <div class="circuit-img-container">
+                <img src="/static/img/istanbul.jpg" alt="Istanbul Park">
+            </div>
+            <div class="circuit-info-container">
+                <p>OCT 8-10</p>
+            </div>
+            <div class="circuit-info-container">
+                <p>{{ turkey.city }}</p>
+            </div>
+            <div class="circuit-info-container">
+                <p>{{ turkey.country }}</p>
+            </div>
         </div>
-        <div class="circuit-info-container">
-            <p>OCT 8-10</p>
-        </div>
-        <div class="circuit-info-container">
-            <p>{{ turkey.city }}</p>
-        </div>
-        <div class="circuit-info-container">
-            <p>{{ turkey.country }}</p>
-        </div>
-    </div>
+    </a>
     <!-- United States -->
-    <div class="event-container">
-        <div class="circuit-img-container">
-            <img src="/static/img/austin.jpg" alt="Circuit of The Americas">
+    <a href="{% url 'single_event' us.event_id %}">
+        <div class="event-container">
+            <div class="circuit-img-container">
+                <img src="/static/img/austin.jpg" alt="Circuit of The Americas">
+            </div>
+            <div class="circuit-info-container">
+                <p>OCT 22-24</p>
+            </div>
+            <div class="circuit-info-container">
+                <p>{{ us.city }}</p>
+            </div>
+            <div class="circuit-info-container">
+                <p>{{ us.country }}</p>
+            </div>
         </div>
-        <div class="circuit-info-container">
-            <p>OCT 22-24</p>
-        </div>
-        <div class="circuit-info-container">
-            <p>{{ us.city }}</p>
-        </div>
-        <div class="circuit-info-container">
-            <p>{{ us.country }}</p>
-        </div>
-    </div>
+    </a>
     <!-- Mexico -->
-    <div class="event-container">
-        <div class="circuit-img-container">
-            <img src="/static/img/mexico.jpg" alt="Autódromo Hermanos Rodríguez">
+    <a href="{% url 'single_event' mexico.event_id %}">
+        <div class="event-container">
+            <div class="circuit-img-container">
+                <img src="/static/img/mexico.jpg" alt="Autódromo Hermanos Rodríguez">
+            </div>
+            <div class="circuit-info-container">
+                <p>NOV 5-7</p>
+            </div>
+            <div class="circuit-info-container">
+                <p>{{ mexico.city }}</p>
+            </div>
+            <div class="circuit-info-container">
+                <p>{{ mexico.country }}</p>
+            </div>
         </div>
-        <div class="circuit-info-container">
-            <p>NOV 5-7</p>
-        </div>
-        <div class="circuit-info-container">
-            <p>{{ mexico.city }}</p>
-        </div>
-        <div class="circuit-info-container">
-            <p>{{ mexico.country }}</p>
-        </div>
-    </div>
+    </a>
     <!-- Brazil -->
     <div class="event-container inactive">
         <div class="circuit-img-container">
