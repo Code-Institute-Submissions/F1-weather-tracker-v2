@@ -124,6 +124,10 @@ body {
           justify-content: center;
 }
 
+#base-header a {
+  text-decoration: none;
+}
+
 #base-header h1 {
   color: #FFC929;
   font-family: "Ubuntu", sans-serif;
