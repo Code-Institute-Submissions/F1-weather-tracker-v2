@@ -11,7 +11,11 @@
     </div>
 </div>
 <div class="forecast-options-container flex-row-ca-cj">
-    <div class="forecast-option flex-col-ca-cj">Hourly forecast <span>(premium)</span></div>
-    <div class="forecast-option flex-col-ca-cj">Daily forecast</div>
+    <a href="{% url 'hourly_forecast' event.event_id %}">
+        <div class="forecast-option flex-col-ca-cj">Hourly forecast <span>(premium)</span></div>
+    </a>
+    <a href="{% url 'daily_forecast' event.event_id %}">
+        <div class="forecast-option flex-col-ca-cj">Daily forecast</div>
+    </a>
 </div>
 {% endblock %}

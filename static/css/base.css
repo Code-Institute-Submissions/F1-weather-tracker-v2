@@ -559,6 +559,10 @@ body {
       flex-wrap: wrap;
 }
 
+.forecast-options-container a {
+  text-decoration: none;
+}
+
 .forecast-options-container .forecast-option {
   height: 160px;
   width: 160px;

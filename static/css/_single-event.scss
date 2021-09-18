@@ -37,6 +37,10 @@
 	margin-top: 16px;
 	flex-wrap: wrap;
 
+	a {
+		text-decoration: none;
+	}
+
 	.forecast-option {
 		height: 160px;
 		width: 160px;
