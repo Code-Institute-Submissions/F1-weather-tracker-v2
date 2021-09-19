@@ -3,4 +3,21 @@
 
 {% block content %}
 <h1>Daily forecast page! {{ event.city }}</h1>
+<div class="flag-trackname-container">
+    <div class="flag-container">
+        <img src="/static/img/{{ event.track_id }}-flag.png" alt="{{ event.country }} flag">
+    </div>
+    <div class="track-name-container flex-col-ca-cj">
+        <h3>{{ event.track_name }}</h3>
+    </div>
+</div>
+<div class="local-time-container">Local time: <span>XX:YY</span></div>
+<div class="schedule-container flex-col-ca-cj">
+    <div class="schedule-title">Event schedule <span>(local time)</span></div>
+    <div class="schedule-session">{{ schedule.practice1_start }}</div>
+    <div class="schedule-session">{{ schedule.practice2_start }}</div>
+    <div class="schedule-session">{{ schedule.practice3_start }}</div>
+    <div class="schedule-session">{{ schedule.qualifying_start }}</div>
+    <div class="schedule-session">{{ schedule.race_start }}</div>
+</div>
 {% endblock %}
