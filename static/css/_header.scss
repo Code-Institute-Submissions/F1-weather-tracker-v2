@@ -6,6 +6,9 @@
   color: $cYellow;
   min-height: 50px;
   justify-content: center;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  box-shadow: 2px 2px 3px 2px #858585;
 
   a {
     text-decoration: none;
