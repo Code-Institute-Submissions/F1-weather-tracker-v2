@@ -22,9 +22,11 @@ def hourly_forecast(request, event_id):
     """ A view to show hourly weather forecast data """
 
     event = get_object_or_404(Event, pk=event_id)
+    schedule = get_object_or_404(Schedule, pk=event_id)
 
     context = {
         'event': event,
+        'schedule': schedule,
     }
 
     return render(request, 'weather/hourly_forecast.html', context)

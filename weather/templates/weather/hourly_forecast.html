@@ -2,5 +2,198 @@
 {% load static %}
 
 {% block content %}
-<h1>Hourly forecast page! {{ event.city }}</h1>
+<div class="flag-trackname-container">
+    <div class="flag-container">
+        <img src="/static/img/{{ event.track_id }}-flag.png" alt="{{ event.country }} flag">
+    </div>
+    <div class="track-name-container flex-col-ca-cj">
+        <h3>{{ event.track_name }}</h3>
+    </div>
+</div>
+<div class="local-time-container flex-row-ca-cj">Local time: <span>XX:YY</span></div>
+<div class="schedule-container flex-col-ca-cj">
+    <div class="schedule-title flex-row-ca-cj">Event schedule <span>(local time)</span></div>
+    <div class="schedule-session uneven-session"><span>P1:</span> {{ schedule.practice1_start }}</div>
+    <div class="schedule-session even-session"><span>P2:</span> {{ schedule.practice2_start }}</div>
+    <div class="schedule-session uneven-session"><span>P3:</span> {{ schedule.practice3_start }}</div>
+    <div class="schedule-session even-session"><span>Q:</span> {{ schedule.qualifying_start }}</div>
+    <div class="schedule-session uneven-session"><span>R:</span> {{ schedule.race_start }}</div>
+</div>
+<div class="hourly-weather-cards-container flex-row-ca-cj">
+    <div class="hourly-weather-card flex-col-ca-cj">
+        <p class="hourly-date">date</p>
+        <p class="hourly-time">time</p>
+        <p class="hourly-temp">temp</p>
+        <p class="hourly-precip">precip</p>
+        <p class="hourly-rain">rain</p>
+    </div>
+    <div class="hourly-weather-card flex-col-ca-cj">
+        <p class="hourly-date">date</p>
+        <p class="hourly-time">0:00</p>
+        <p class="hourly-temp">8°C</p>
+        <p class="hourly-precip">0.4mm</p>
+        <p class="hourly-rain">32%</p>
+    </div>
+    <div class="hourly-weather-card flex-col-ca-cj">
+        <p class="hourly-date">date</p>
+        <p class="hourly-time">1:00</p>
+        <p class="hourly-temp">8°C</p>
+        <p class="hourly-precip">0.4mm</p>
+        <p class="hourly-rain">32%</p>
+    </div>
+    <div class="hourly-weather-card flex-col-ca-cj">
+        <p class="hourly-date">date</p>
+        <p class="hourly-time">2:00</p>
+        <p class="hourly-temp">8°C</p>
+        <p class="hourly-precip">0.4mm</p>
+        <p class="hourly-rain">32%</p>
+    </div>
+    <div class="hourly-weather-card flex-col-ca-cj">
+        <p class="hourly-date">date</p>
+        <p class="hourly-time">3:00</p>
+        <p class="hourly-temp">8°C</p>
+        <p class="hourly-precip">0.4mm</p>
+        <p class="hourly-rain">32%</p>
+    </div>
+    <div class="hourly-weather-card flex-col-ca-cj">
+        <p class="hourly-date">date</p>
+        <p class="hourly-time">4:00</p>
+        <p class="hourly-temp">8°C</p>
+        <p class="hourly-precip">0.4mm</p>
+        <p class="hourly-rain">32%</p>
+    </div>
+    <div class="hourly-weather-card flex-col-ca-cj">
+        <p class="hourly-date">date</p>
+        <p class="hourly-time">5:00</p>
+        <p class="hourly-temp">8°C</p>
+        <p class="hourly-precip">0.4mm</p>
+        <p class="hourly-rain">32%</p>
+    </div>
+    <div class="hourly-weather-card flex-col-ca-cj">
+        <p class="hourly-date">date</p>
+        <p class="hourly-time">6:00</p>
+        <p class="hourly-temp">8°C</p>
+        <p class="hourly-precip">0.4mm</p>
+        <p class="hourly-rain">32%</p>
+    </div>
+    <div class="hourly-weather-card flex-col-ca-cj">
+        <p class="hourly-date">date</p>
+        <p class="hourly-time">7:00</p>
+        <p class="hourly-temp">8°C</p>
+        <p class="hourly-precip">0.4mm</p>
+        <p class="hourly-rain">32%</p>
+    </div>
+    <div class="hourly-weather-card flex-col-ca-cj">
+        <p class="hourly-date">date</p>
+        <p class="hourly-time">8:00</p>
+        <p class="hourly-temp">8°C</p>
+        <p class="hourly-precip">0.4mm</p>
+        <p class="hourly-rain">32%</p>
+    </div>
+    <div class="hourly-weather-card flex-col-ca-cj">
+        <p class="hourly-date">date</p>
+        <p class="hourly-time">9:00</p>
+        <p class="hourly-temp">8°C</p>
+        <p class="hourly-precip">0.4mm</p>
+        <p class="hourly-rain">32%</p>
+    </div>
+    <div class="hourly-weather-card flex-col-ca-cj">
+        <p class="hourly-date">date</p>
+        <p class="hourly-time">10:00</p>
+        <p class="hourly-temp">8°C</p>
+        <p class="hourly-precip">0.4mm</p>
+        <p class="hourly-rain">32%</p>
+    </div>
+    <div class="hourly-weather-card flex-col-ca-cj">
+        <p class="hourly-date">date</p>
+        <p class="hourly-time">11:00</p>
+        <p class="hourly-temp">8°C</p>
+        <p class="hourly-precip">0.4mm</p>
+        <p class="hourly-rain">32%</p>
+    </div>
+    <div class="hourly-weather-card flex-col-ca-cj">
+        <p class="hourly-date">date</p>
+        <p class="hourly-time">12:00</p>
+        <p class="hourly-temp">8°C</p>
+        <p class="hourly-precip">0.4mm</p>
+        <p class="hourly-rain">32%</p>
+    </div>
+    <div class="hourly-weather-card flex-col-ca-cj">
+        <p class="hourly-date">date</p>
+        <p class="hourly-time">13:00</p>
+        <p class="hourly-temp">8°C</p>
+        <p class="hourly-precip">0.4mm</p>
+        <p class="hourly-rain">32%</p>
+    </div>
+    <div class="hourly-weather-card flex-col-ca-cj">
+        <p class="hourly-date">date</p>
+        <p class="hourly-time">14:00</p>
+        <p class="hourly-temp">8°C</p>
+        <p class="hourly-precip">0.4mm</p>
+        <p class="hourly-rain">32%</p>
+    </div>
+    <div class="hourly-weather-card flex-col-ca-cj">
+        <p class="hourly-date">date</p>
+        <p class="hourly-time">15:00</p>
+        <p class="hourly-temp">8°C</p>
+        <p class="hourly-precip">0.4mm</p>
+        <p class="hourly-rain">32%</p>
+    </div>
+    <div class="hourly-weather-card flex-col-ca-cj">
+        <p class="hourly-date">date</p>
+        <p class="hourly-time">16:00</p>
+        <p class="hourly-temp">8°C</p>
+        <p class="hourly-precip">0.4mm</p>
+        <p class="hourly-rain">32%</p>
+    </div>
+    <div class="hourly-weather-card flex-col-ca-cj">
+        <p class="hourly-date">date</p>
+        <p class="hourly-time">17:00</p>
+        <p class="hourly-temp">8°C</p>
+        <p class="hourly-precip">0.4mm</p>
+        <p class="hourly-rain">32%</p>
+    </div>
+    <div class="hourly-weather-card flex-col-ca-cj">
+        <p class="hourly-date">date</p>
+        <p class="hourly-time">18:00</p>
+        <p class="hourly-temp">8°C</p>
+        <p class="hourly-precip">0.4mm</p>
+        <p class="hourly-rain">32%</p>
+    </div>
+    <div class="hourly-weather-card flex-col-ca-cj">
+        <p class="hourly-date">date</p>
+        <p class="hourly-time">19:00</p>
+        <p class="hourly-temp">8°C</p>
+        <p class="hourly-precip">0.4mm</p>
+        <p class="hourly-rain">32%</p>
+    </div>
+    <div class="hourly-weather-card flex-col-ca-cj">
+        <p class="hourly-date">date</p>
+        <p class="hourly-time">20:00</p>
+        <p class="hourly-temp">8°C</p>
+        <p class="hourly-precip">0.4mm</p>
+        <p class="hourly-rain">32%</p>
+    </div>
+    <div class="hourly-weather-card flex-col-ca-cj">
+        <p class="hourly-date">date</p>
+        <p class="hourly-time">21:00</p>
+        <p class="hourly-temp">8°C</p>
+        <p class="hourly-precip">0.4mm</p>
+        <p class="hourly-rain">32%</p>
+    </div>
+    <div class="hourly-weather-card flex-col-ca-cj">
+        <p class="hourly-date">date</p>
+        <p class="hourly-time">22:00</p>
+        <p class="hourly-temp">8°C</p>
+        <p class="hourly-precip">0.4mm</p>
+        <p class="hourly-rain">32%</p>
+    </div>
+    <div class="hourly-weather-card flex-col-ca-cj">
+        <p class="hourly-date">date</p>
+        <p class="hourly-time">23:00</p>
+        <p class="hourly-temp">8°C</p>
+        <p class="hourly-precip">0.4mm</p>
+        <p class="hourly-rain">32%</p>
+    </div>
+</div>
 {% endblock %}

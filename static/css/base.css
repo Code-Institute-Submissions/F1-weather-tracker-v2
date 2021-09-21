@@ -697,4 +697,41 @@ body {
 .daily-weather-cards-container .daily-weather-card .daily-precip, .daily-weather-cards-container .daily-weather-card .daily-rain {
   color: #509CFF;
 }
+
+.hourly-weather-cards-container {
+  margin-top: 24px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.hourly-weather-cards-container .hourly-weather-card {
+  margin: 12px 6px;
+  min-width: 50px;
+  padding: 4px;
+  font-family: "Inter", sans-serif;
+  font-size: 1.1rem;
+  font-weight: 500;
+  border-radius: 10px;
+  background: #211F22;
+}
+
+.hourly-weather-cards-container .hourly-weather-card p {
+  margin: 2px;
+}
+
+.hourly-weather-cards-container .hourly-weather-card .hourly-date {
+  color: #FFC929;
+}
+
+.hourly-weather-cards-container .hourly-weather-card .hourly-time {
+  color: #FFC929;
+}
+
+.hourly-weather-cards-container .hourly-weather-card .hourly-temp {
+  color: #FF4040;
+}
+
+.hourly-weather-cards-container .hourly-weather-card .hourly-precip, .hourly-weather-cards-container .hourly-weather-card .hourly-rain {
+  color: #509CFF;
+}
 /*# sourceMappingURL=base.css.map */
