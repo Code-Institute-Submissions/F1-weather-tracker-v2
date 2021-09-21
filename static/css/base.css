@@ -193,7 +193,7 @@ body {
   width: 100%;
   background-color: #211F22;
   color: #FFC929;
-  font-size: 2rem;
+  font-size: 1.8rem;
   min-height: 50px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -205,6 +205,13 @@ body {
   font-family: "Ubuntu", sans-serif;
   font-size: 1.8rem;
   font-weight: 300;
+}
+
+#base-footer p a {
+  font-size: 1.6rem;
+  font-style: italic;
+  color: #FF4040;
+  text-decoration: none;
 }
 
 /* --- allauth templates --- */

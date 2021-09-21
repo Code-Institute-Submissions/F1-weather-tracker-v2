@@ -4,7 +4,7 @@
   width: 100%;
   background-color: $cGray;
   color: $cYellow;
-  font-size: 2rem;
+  font-size: 1.8rem;
   min-height: 50px;
   justify-content: center;
 
@@ -13,5 +13,12 @@
     font-family: "Ubuntu", sans-serif;
     font-size: 1.8rem;
     font-weight: 300;
+
+    a {
+      font-size: 1.6rem;
+      font-style: italic;
+      color: $cRed;
+      text-decoration: none;
+    }
   }
 }
