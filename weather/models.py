@@ -28,3 +28,18 @@ class Dailyweatherforecast(models.Model):
     class Meta:
         managed = False
         db_table = 'DailyWeatherForecast'
+
+
+class Hourlyweatherforecast(models.Model):
+    track_id_time_slot = models.IntegerField(primary_key=True)
+    track_id = models.IntegerField()
+    time_slot = models.CharField(max_length=2)
+    date = models.CharField(max_length=16, blank=True, null=True)
+    time = models.CharField(max_length=16, blank=True, null=True)
+    temperature = models.IntegerField(blank=True, null=True)
+    precipitation = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
+    chance_of_rain = models.IntegerField(blank=True, null=True)
+
+    class Meta:
+        managed = False
+        db_table = 'HourlyWeatherForecast'
