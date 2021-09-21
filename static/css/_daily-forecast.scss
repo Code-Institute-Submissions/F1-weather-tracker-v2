@@ -1,6 +1,6 @@
 .local-time-container {
 	margin-top: 16px;
-  height: 32px;
+	height: 32px;
   width: 40%;
 	background: #e9e9e9cc;
   border-radius: 10px;
@@ -63,5 +63,40 @@
 
 	.even-session {
 		background: #e1e1e1;
+	}
+}
+
+.daily-weather-cards-container {
+	margin-top: 24px;
+	flex-wrap: wrap;
+
+	.daily-weather-card {
+		margin: 16px 12px;
+		min-width: 130px;
+		padding: 6px;
+		font-family: "Inter", sans-serif;
+		font-size: 1.4rem;
+		font-weight: 600;
+		border-radius: 10px;
+		background: $cGray;
+		p {
+			margin: 4px;
+		}
+
+		.daily-date {
+			color: $cYellow;
+		}
+
+		.daily-mintemp {
+			color: $cGreen;
+		}
+
+		.daily-maxtemp {
+			color: $cRed;
+		}
+
+		.daily-precip, .daily-rain {
+			color: $cBlue;
+		}
 	}
 }

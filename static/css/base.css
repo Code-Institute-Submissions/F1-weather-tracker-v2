@@ -660,4 +660,41 @@ body {
 .schedule-container .even-session {
   background: #e1e1e1;
 }
+
+.daily-weather-cards-container {
+  margin-top: 24px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.daily-weather-cards-container .daily-weather-card {
+  margin: 16px 12px;
+  min-width: 130px;
+  padding: 6px;
+  font-family: "Inter", sans-serif;
+  font-size: 1.4rem;
+  font-weight: 600;
+  border-radius: 10px;
+  background: #211F22;
+}
+
+.daily-weather-cards-container .daily-weather-card p {
+  margin: 4px;
+}
+
+.daily-weather-cards-container .daily-weather-card .daily-date {
+  color: #FFC929;
+}
+
+.daily-weather-cards-container .daily-weather-card .daily-mintemp {
+  color: #A9DC76;
+}
+
+.daily-weather-cards-container .daily-weather-card .daily-maxtemp {
+  color: #FF4040;
+}
+
+.daily-weather-cards-container .daily-weather-card .daily-precip, .daily-weather-cards-container .daily-weather-card .daily-rain {
+  color: #509CFF;
+}
 /*# sourceMappingURL=base.css.map */
