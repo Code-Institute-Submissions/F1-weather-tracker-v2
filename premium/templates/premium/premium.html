@@ -3,84 +3,43 @@
 
 {% block content %}
 
-<style type="text/css">
-    /**
-	 * The CSS shown here will not be introduced in the Quickstart guide, but shows
-	 * how you can use CSS to style your Element's container.
-	 */
-    .StripeElement {
-        box-sizing: border-box;
-
-        height: 40px;
-        width: 360px;
-
-        padding: 10px 12px;
-
-        border: 1px solid transparent;
-        border-radius: 4px;
-        background-color: white;
-
-        box-shadow: 0 1px 3px 0 #e6ebf1;
-        -webkit-transition: box-shadow 150ms ease;
-        transition: box-shadow 150ms ease;
-    }
-
-    .StripeElement--focus {
-        box-shadow: 0 1px 3px 0 #cfd7df;
-    }
-
-    .StripeElement--invalid {
-        border-color: #fa755a;
-    }
-
-    .StripeElement--webkit-autofill {
-        background-color: #fefde5 !important;
-    }
-
-    .hide-input {
-        display: none;
-    }
-</style>
-
 <script src="https://js.stripe.com/v3/"></script>
 
 <h1 class="page-title">Premium membership</h1>
 
-<p>Purchase your premium membership tied to email address: <strong>{{ user.email }}</strong></p>
+<p class="premium-p">Purchase your premium membership tied to email address: <span>{{ user.email }}</span></p>
 
-<form action="{% url 'charge' %}" method="post" id="payment-form">
-    {% csrf_token %}
-    <div class="form-field-12">
-        <label for="amount">Purchase your premium membership:</label>
-        <br>
-        <br>
-        <select required name="amount" id="amount">
-            <option selected value="5">Premium membership ($5)</option>
-        </select>
-    </div>
-
-    <div class="form-field-6">
-        <input class="hide-input" type="text" name="email" value="{{ user.email }}" readonly="readonly">
-    </div>
-
-    <div class="form-row">
-        <label for="card-element">
-            Credit or debit card
-        </label>
-        <div id="card-element">
-            <!-- A Stripe Element will be inserted here. -->
+<div class="stripe-form-container flex-col-ca-cj">
+    <form action="{% url 'charge' %}" method="post" id="payment-form">
+        {% csrf_token %}
+        <div class="form-options-container flex-col-ca-cj">
+            <label for="amount">Purchase premium membership:</label>
+            <select required name="amount" id="amount">
+                <option selected value="5">Premium membership ($5)</option>
+            </select>
         </div>
 
-        <!-- Used to display form errors. -->
-        <div id="card-errors" role="alert"></div>
-    </div>
+        <div>
+            <input class="hide-input" type="text" name="email" value="{{ user.email }}" readonly="readonly">
+        </div>
 
-    <div style="clear:left"></div>
-    <hr>
+        <div class="stripe-element-container flex-col-ca-cj">
+            <label for="card-element">
+                Enter credit or debit card
+            </label>
+            <div id="card-element">
+                <!-- A Stripe Element will be inserted here. -->
+            </div>
 
-    <input class="myButton" style="background-color:#10a195" type="submit" value="Submit Payment" name="">
+            <!-- Used to display form errors. -->
+            <div id="card-errors" role="alert"></div>
 
-</form>
+            <!-- Submit payment button -->
+            <input class="submit-payment-btn" type="submit" value="Submit payment" name="">
+        </div>
+
+    </form>
+</div>
 
 <script>
     // Create a Stripe client.

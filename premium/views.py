@@ -15,14 +15,18 @@ stripe.api_key = os.getenv('STRIPE_API_KEY', '')
 def buy_premium(request):
     """ A view to return the buy premium page """
 
-    current_user = request.user
-    print(current_user.email)
-
-    if current_user.premium:
-        return render(request, 'premium/already_premium.html')
+    if not request.user.is_authenticated:
+        return redirect('/accounts/signup/')
 
     else:
-        return render(request, 'premium/premium.html')
+        current_user = request.user
+        print(current_user.email)
+
+        if current_user.premium:
+            return render(request, 'premium/already_premium.html')
+
+        else:
+            return render(request, 'premium/premium.html')
 
 
 def charge(request):
@@ -44,7 +48,7 @@ def charge(request):
             customer=customer,
             amount=amount*100,
             currency='usd',
-            description="Donation"
+            description="Premium membership"
             )
 
         current_user.premium = True

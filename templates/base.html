@@ -46,7 +46,7 @@
     <nav class="mobile-nav">
         <a href="/">Home</a>
         <a href="{% url 'all_events' %}">Calendar</a>
-        <a href="/">Premium</a>
+        <a href="{% url 'buy_premium' %}">Premium</a>
         {% if request.user.is_authenticated %}
         <a href="/accounts/logout/">Logout</a>
         {% else %}
