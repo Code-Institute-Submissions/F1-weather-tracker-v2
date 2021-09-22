@@ -54,6 +54,7 @@ INSTALLED_APPS = [
     'home',
     'events',
     'weather',
+    'premium',
 ]
 
 AUTH_USER_MODEL = 'accounts.CustomUser'  # custom user model
