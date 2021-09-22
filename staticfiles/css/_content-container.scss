@@ -1,0 +1,48 @@
+/* --- content container --- */
+
+#content-container {
+  width: 70%;
+  flex-grow: 1;
+  padding: 12px;
+  /*background-color: darken($cWhite, 10%); remove later */
+  border-left: 1px dashed red;
+  border-right: 1px dashed red;
+}
+
+/* --- media queries --- */
+
+@media (min-width: 2400px) {
+  #content-container {
+    width: 40%;
+  }
+}
+
+@media (min-width: 2200px) and (max-width: 2400px) {
+  #content-container {
+    width: 45%;
+  }
+}
+
+@media (min-width: 2000px) and (max-width: 2200px) {
+  #content-container {
+    width: 50%;
+  }
+}
+
+@media (min-width: 1800px) and (max-width: 2000px) {
+  #content-container {
+    width: 55%;
+  }
+}
+
+@media (min-width: 1600px) and (max-width: 1800px) {
+  #content-container {
+    width: 60%;
+  }
+}
+
+@media (min-width: 1400px) and (max-width: 1600px) {
+  #content-container {
+    width: 65%;
+  }
+}

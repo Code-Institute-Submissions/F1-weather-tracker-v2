@@ -1,0 +1,34 @@
+.hourly-weather-cards-container {
+	margin-top: 24px;
+	flex-wrap: wrap;
+
+	.hourly-weather-card {
+		margin: 12px 6px;
+		min-width: 50px;
+		padding: 4px;
+		font-family: "Inter", sans-serif;
+		font-size: 1.1rem;
+		font-weight: 500;
+		border-radius: 10px;
+		background: $cGray;
+		p {
+			margin: 2px;
+		}
+
+		.hourly-date {
+			color: $cYellow;
+		}
+
+		.hourly-time {
+			color: $cYellow;
+		}
+
+		.hourly-temp {
+			color: $cRed;
+		}
+
+		.hourly-precip, .hourly-rain {
+			color: $cBlue;
+		}
+	}
+}
