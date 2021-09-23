@@ -20,7 +20,6 @@ def buy_premium(request):
 
     else:
         current_user = request.user
-        print(current_user.email)
 
         if current_user.premium:
             return render(request, 'premium/already_premium.html')
@@ -35,8 +34,6 @@ def charge(request):
     current_user = request.user
 
     if request.method == 'POST':
-        print('Data:', request.POST)
-
         amount = int(request.POST['amount'])
 
         customer = stripe.Customer.create(
@@ -58,6 +55,14 @@ def charge(request):
 
 
 def successMsg(request):
-    """ Stipe payment successful view """
+    """ Stripe payment successful view. """
 
-    return render(request, 'premium/payment_success.html')
+    if not request.user.is_authenticated:
+        return redirect('/accounts/signup/')
+
+    else:
+        if not request.user.premium:
+            return redirect('/premium/')
+
+        else:
+            return render(request, 'premium/payment_success.html')
