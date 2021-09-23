@@ -13,6 +13,7 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 from pathlib import Path
 import os
 import django_heroku
+import dj_database_url
 
 from dotenv import load_dotenv
 
@@ -131,17 +132,23 @@ DATABASE_USER = os.getenv('DATABASE_USER', '')
 DATABASE_PASSWORD = os.getenv('DATABASE_PASSWORD', '')
 DATABASE_HOST = os.getenv('DATABASE_HOST', '')
 DATABASE_PORT = os.getenv('DATABASE_PORT', '')
+DATABASE_URL = os.getenv('DATABASE_URL', '')
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': DATABASE_CNAME,
-        'USER': DATABASE_USER,
-        'PASSWORD': DATABASE_PASSWORD,
-        'HOST': DATABASE_HOST,
-        'PORT': DATABASE_PORT,
+if DEBUG not in os.environ:
+    DATABASES = {
+        'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
     }
-}
+else:
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.postgresql_psycopg2',
+            'NAME': DATABASE_CNAME,
+            'USER': DATABASE_USER,
+            'PASSWORD': DATABASE_PASSWORD,
+            'HOST': DATABASE_HOST,
+            'PORT': DATABASE_PORT,
+            }
+        }
 
 
 # Password validation
