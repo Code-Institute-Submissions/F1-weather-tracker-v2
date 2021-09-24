@@ -168,8 +168,10 @@ body {
   border: none;
 }
 
-.hamburger .bar, .hamburger:after, .hamburger:before {
-  content: '';
+.hamburger .bar,
+.hamburger:after,
+.hamburger:before {
+  content: "";
   display: block;
   width: 100%;
   height: 5px;
@@ -193,6 +195,7 @@ body {
   opacity: 0;
 }
 
+/* --- side nav --- */
 .mobile-nav {
   position: fixed;
   top: 0;
@@ -229,6 +232,90 @@ body {
 .mobile-nav a:hover {
   background-color: #FF4040;
   color: #211F22;
+}
+
+/* --- header media queries */
+@media (max-width: 769px) {
+  #base-header h1 {
+    font-size: 1.9rem;
+  }
+  .hamburger {
+    left: 26px;
+    width: 24px;
+  }
+  .hamburger .bar,
+  .hamburger:after,
+  .hamburger:before {
+    height: 3px;
+    margin: 5px 0px;
+  }
+  .hamburger.is-active:before {
+    -webkit-transform: rotate(-45deg) translate(-4px, 2px);
+            transform: rotate(-45deg) translate(-4px, 2px);
+  }
+  .hamburger.is-active:after {
+    -webkit-transform: rotate(45deg) translate(-9px, -8px);
+            transform: rotate(45deg) translate(-9px, -8px);
+  }
+}
+
+@media (max-width: 681px) {
+  .mobile-nav {
+    width: 50%;
+    padding-top: 50px;
+  }
+}
+
+@media (max-width: 542px) {
+  .mobile-nav {
+    width: 60%;
+  }
+}
+
+@media (max-width: 415px) {
+  .mobile-nav {
+    width: 70%;
+  }
+}
+
+@media (max-width: 377px) {
+  #base-header h1 {
+    font-size: 1.7rem;
+  }
+  .hamburger {
+    left: 24px;
+    width: 22px;
+  }
+  .hamburger .bar,
+  .hamburger:after,
+  .hamburger:before {
+    height: 2px;
+    margin: 4px 0px;
+  }
+  .hamburger.is-active:before {
+    -webkit-transform: rotate(-45deg) translate(-4px, 2px);
+            transform: rotate(-45deg) translate(-4px, 2px);
+  }
+  .hamburger.is-active:after {
+    -webkit-transform: rotate(45deg) translate(-7px, -5px);
+            transform: rotate(45deg) translate(-7px, -5px);
+  }
+}
+
+@media (max-width: 351px) {
+  .mobile-nav {
+    width: 80%;
+  }
+  .mobile-nav a {
+    padding: 10px 10px;
+    font-size: 1.9rem;
+  }
+}
+
+@media (max-width: 319px) {
+  #base-header h1 {
+    font-size: 1.5rem;
+  }
 }
 
 /* --- content container --- */
@@ -280,6 +367,18 @@ body {
   }
 }
 
+@media (max-width: 770px) {
+  #content-container {
+    width: 85%;
+  }
+}
+
+@media (max-width: 425px) {
+  #content-container {
+    width: 98%;
+  }
+}
+
 /* --- footer --- */
 #base-footer {
   width: 100%;
@@ -304,6 +403,40 @@ body {
   font-style: italic;
   color: #FF4040;
   text-decoration: none;
+}
+
+/* --- footer media queries --- */
+@media (max-width: 561px) {
+  #base-footer p {
+    font-size: 1.5rem;
+  }
+  #base-footer p a {
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 377px) {
+  #base-footer {
+    min-height: 44px;
+  }
+  #base-footer p {
+    font-size: 1.3rem;
+  }
+  #base-footer p a {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 321px) {
+  #base-footer {
+    min-height: 38px;
+  }
+  #base-footer p {
+    font-size: 1.2rem;
+  }
+  #base-footer p a {
+    font-size: 1.1rem;
+  }
 }
 
 /* --- allauth templates --- */
@@ -422,74 +555,194 @@ body {
   font-weight: bold;
 }
 
+.homepage-title {
+  color: #211F22;
+  font-family: "Titillium+Web", sans-serif;
+  font-size: 3rem;
+  font-weight: 800;
+  margin-bottom: 8px;
+}
+
+.hero-container {
+  width: 100%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
 .calendar-ad {
-  width: 300px;
-  height: 140px;
-  border: 3px solid #211F22;
+  width: 60%;
   border-radius: 10px;
-  padding: 16px;
-  background: #ffec95;
-  margin-top: 16px;
+  padding: 24px 48px;
+  margin: 16px;
+  background: #FF4040;
 }
 
 .calendar-ad p {
-  font-size: 1.6rem;
+  color: #211F22;
+  font-family: "Titillium+Web", sans-serif;
+  font-size: 2.2rem;
   font-weight: 700;
-  color: #FF4040;
-  margin-bottom: 16px;
-  text-align: justify;
+  margin-bottom: 24px;
+  text-align: center;
   text-justify: center;
 }
 
 .calendar-ad a {
   background-color: #211F22;
   color: #FF4040;
-  padding: 6px;
+  font-family: "Ubuntu", sans-serif;
+  padding: 10px 8px;
   border-radius: 5px;
   text-decoration: none;
   text-transform: uppercase;
-  font-size: 1.8rem;
-  font-weight: 400;
+  font-size: 1.7rem;
+  font-weight: 500;
 }
 
 .calendar-ad a:hover {
-  -webkit-transform: scale(1.05);
-          transform: scale(1.05);
+  -webkit-transform: scale(1.08);
+          transform: scale(1.08);
 }
 
 .register-ad {
-  width: 300px;
-  height: 140px;
-  border: 3px solid #211F22;
+  width: 60%;
   border-radius: 10px;
-  padding: 16px;
-  background: #52496e;
-  margin-top: 16px;
+  padding: 24px 48px;
+  margin: 16px;
+  background: #FFC929;
 }
 
 .register-ad p {
-  font-size: 1.6rem;
+  color: #211F22;
+  font-family: "Titillium+Web", sans-serif;
+  font-size: 2.2rem;
   font-weight: 700;
-  color: #FFC929;
-  margin-bottom: 16px;
-  text-align: justify;
+  margin-bottom: 24px;
+  text-align: center;
   text-justify: center;
 }
 
 .register-ad a {
   background-color: #211F22;
   color: #FFC929;
-  padding: 6px;
+  font-family: "Ubuntu", sans-serif;
+  padding: 10px 8px;
   border-radius: 5px;
   text-decoration: none;
   text-transform: uppercase;
-  font-size: 1.8rem;
-  font-weight: 400;
+  font-size: 1.7rem;
+  font-weight: 500;
 }
 
 .register-ad a:hover {
-  -webkit-transform: scale(1.05);
-          transform: scale(1.05);
+  -webkit-transform: scale(1.08);
+          transform: scale(1.08);
+}
+
+/* --- home page media queries --- */
+@media (max-width: 875px) {
+  .homepage-title {
+    font-size: 2.8rem;
+  }
+  .calendar-ad {
+    width: 75%;
+  }
+  .calendar-ad p {
+    font-size: 1.9rem;
+    font-weight: 700;
+    margin-bottom: 16px;
+  }
+  .calendar-ad a {
+    padding: 8px 6px;
+    font-size: 1.5rem;
+  }
+  .register-ad {
+    width: 75%;
+  }
+  .register-ad p {
+    font-size: 1.9rem;
+    font-weight: 700;
+    margin-bottom: 16px;
+  }
+  .register-ad a {
+    padding: 8px 6px;
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 527px) {
+  .homepage-title {
+    font-size: 2.3rem;
+  }
+  .calendar-ad {
+    width: 90%;
+  }
+  .calendar-ad p {
+    font-size: 1.7rem;
+  }
+  .register-ad {
+    width: 90%;
+  }
+  .register-ad p {
+    font-size: 1.7rem;
+  }
+}
+
+@media (max-width: 395px) {
+  .homepage-title {
+    font-size: 1.9rem;
+    margin-bottom: 4px;
+  }
+  .calendar-ad {
+    width: 95%;
+    padding: 12px 14px;
+  }
+  .calendar-ad p {
+    font-size: 1.5rem;
+    margin-bottom: 11px;
+  }
+  .calendar-ad a {
+    font-size: 1.3rem;
+  }
+  .register-ad {
+    width: 95%;
+    padding: 12px 14px;
+  }
+  .register-ad p {
+    font-size: 1.5rem;
+    margin-bottom: 11px;
+  }
+  .register-ad a {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 322px) {
+  .homepage-title {
+    font-size: 1.7rem;
+  }
+  .calendar-ad {
+    padding: 8px 10px;
+  }
+  .calendar-ad p {
+    font-size: 1.4rem;
+    margin-bottom: 9px;
+  }
+  .calendar-ad a {
+    font-size: 1.2rem;
+    padding: 6px 4px;
+  }
+  .register-ad {
+    padding: 8px 10px;
+  }
+  .register-ad p {
+    font-size: 1.4rem;
+    margin-bottom: 9px;
+  }
+  .register-ad a {
+    font-size: 1.2rem;
+    padding: 6px 4px;
+  }
 }
 
 .page-title {
@@ -974,6 +1227,44 @@ body {
 }
 
 .error-container .error-a:hover {
+  font-weight: 700;
+}
+
+.profile-container {
+  width: 50%;
+  padding: 20px;
+  border: 2px solid #FFC929;
+  border-radius: 10px;
+}
+
+.profile-container .email-sub,
+.profile-container .premium-sub {
+  margin-bottom: 6px;
+  color: #211F22;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+.profile-container .email-user {
+  margin-bottom: 24px;
+  color: #211F22;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+
+.profile-container .premium-true {
+  color: #A9DC76;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.profile-container .premium-false {
+  color: #FF4040;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 1.8rem;
   font-weight: 700;
 }
 /*# sourceMappingURL=base.css.map */
