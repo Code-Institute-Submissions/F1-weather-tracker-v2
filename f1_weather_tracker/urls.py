@@ -24,7 +24,9 @@ urlpatterns = [
     path('premium/', include('premium.urls')),
 ]
 
-handler404 = 'f1_weather_tracker.views.entry_not_found'
-handler403 = 'f1_weather_tracker.views.permission_denied'
-handler500 = 'f1_weather_tracker.views.server_error'
-handler400 = 'f1_weather_tracker.views.bad_request'
+# custom error handlers
+
+handler400 = 'f1_weather_tracker.views.error_400'
+handler403 = 'f1_weather_tracker.views.error_403'
+handler404 = 'f1_weather_tracker.views.error_404'
+handler500 = 'f1_weather_tracker.views.error_500'
