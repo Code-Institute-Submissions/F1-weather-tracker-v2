@@ -384,30 +384,42 @@ body {
   /* btn */
   display: inline-block;
   margin-left: 12px;
-  font-weight: 600;
-  text-transform: lowercase;
-  color: #FFC929;
+  /*font-weight: 600;*/
+  /*text-transform: lowercase;*/
+  /*color: $cYellow;*/
   text-align: center;
   vertical-align: middle;
   -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  background-color: #211F22;
-  border: 1px solid #211F22;
-  padding: 0.5rem 1.5rem;
-  font-size: 1.2rem;
-  line-height: 1.5;
-  border-radius: 10px;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  /*background-color: $cGray;*/
+  /*border: 1px solid $cGray;*/
+  /*padding: 0.5rem 1.5rem;*/
+  /*font-size: 1.2rem;*/
+  /*line-height: 1.5;*/
+  /*border-radius: 10px;*/
   cursor: pointer;
+  background-color: #211F22;
+  color: #FFC929;
+  font-family: "Ubuntu", sans-serif;
+  padding: 8px;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  font-weight: 500;
 }
 
 .auth-form button:hover,
 .auth-form input[type="submit"]:hover {
-  color: #FFC929;
-  border-color: #211F22;
   -webkit-transform: scale(1.05);
           transform: scale(1.05);
+}
+
+.password-reset-btn {
+  width: 50% !important;
 }
 
 .auth-form a {
@@ -422,74 +434,88 @@ body {
   font-weight: bold;
 }
 
+.homepage-title {
+  color: #211F22;
+  font-family: "Titillium+Web", sans-serif;
+  font-size: 3rem;
+  font-weight: 800;
+  margin-bottom: 8px;
+}
+
+.hero-container {
+  width: 100%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
 .calendar-ad {
-  width: 300px;
-  height: 140px;
-  border: 3px solid #211F22;
+  width: 60%;
   border-radius: 10px;
-  padding: 16px;
-  background: #ffec95;
-  margin-top: 16px;
+  padding: 24px 48px;
+  margin: 16px;
+  background: #FF4040;
 }
 
 .calendar-ad p {
-  font-size: 1.6rem;
+  color: #211F22;
+  font-family: "Titillium+Web", sans-serif;
+  font-size: 2.2rem;
   font-weight: 700;
-  color: #FF4040;
-  margin-bottom: 16px;
-  text-align: justify;
+  margin-bottom: 24px;
+  text-align: center;
   text-justify: center;
 }
 
 .calendar-ad a {
   background-color: #211F22;
   color: #FF4040;
-  padding: 6px;
+  font-family: "Ubuntu", sans-serif;
+  padding: 10px 8px;
   border-radius: 5px;
   text-decoration: none;
   text-transform: uppercase;
-  font-size: 1.8rem;
-  font-weight: 400;
+  font-size: 1.7rem;
+  font-weight: 500;
 }
 
 .calendar-ad a:hover {
-  -webkit-transform: scale(1.05);
-          transform: scale(1.05);
+  -webkit-transform: scale(1.08);
+          transform: scale(1.08);
 }
 
 .register-ad {
-  width: 300px;
-  height: 140px;
-  border: 3px solid #211F22;
+  width: 60%;
   border-radius: 10px;
-  padding: 16px;
-  background: #52496e;
-  margin-top: 16px;
+  padding: 24px 48px;
+  margin: 16px;
+  background: #FFC929;
 }
 
 .register-ad p {
-  font-size: 1.6rem;
+  color: #211F22;
+  font-family: "Titillium+Web", sans-serif;
+  font-size: 2.2rem;
   font-weight: 700;
-  color: #FFC929;
-  margin-bottom: 16px;
-  text-align: justify;
+  margin-bottom: 24px;
+  text-align: center;
   text-justify: center;
 }
 
 .register-ad a {
   background-color: #211F22;
   color: #FFC929;
-  padding: 6px;
+  font-family: "Ubuntu", sans-serif;
+  padding: 10px 8px;
   border-radius: 5px;
   text-decoration: none;
   text-transform: uppercase;
-  font-size: 1.8rem;
-  font-weight: 400;
+  font-size: 1.7rem;
+  font-weight: 500;
 }
 
 .register-ad a:hover {
-  -webkit-transform: scale(1.05);
-          transform: scale(1.05);
+  -webkit-transform: scale(1.08);
+          transform: scale(1.08);
 }
 
 .page-title {

@@ -23,3 +23,8 @@ urlpatterns = [
     path('events/', include('events.urls')),
     path('premium/', include('premium.urls')),
 ]
+
+handler404 = 'f1_weather_tracker.views.entry_not_found'
+handler403 = 'f1_weather_tracker.views.permission_denied'
+handler500 = 'f1_weather_tracker.views.server_error'
+handler400 = 'f1_weather_tracker.views.bad_request'

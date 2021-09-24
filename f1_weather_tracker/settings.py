@@ -134,7 +134,7 @@ DATABASE_HOST = os.getenv('DATABASE_HOST', '')
 DATABASE_PORT = os.getenv('DATABASE_PORT', '')
 DATABASE_URL = os.getenv('DATABASE_URL', '')
 
-if not DEBUG:
+""" if not DEBUG:
     DATABASES = {
         'default': dj_database_url.parse(DATABASE_URL)
     }
@@ -148,7 +148,19 @@ else:
             'HOST': DATABASE_HOST,
             'PORT': DATABASE_PORT,
             }
+        } """
+
+
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': DATABASE_CNAME,
+        'USER': DATABASE_USER,
+        'PASSWORD': DATABASE_PASSWORD,
+        'HOST': DATABASE_HOST,
+        'PORT': DATABASE_PORT,
         }
+    }
 
 
 # Password validation

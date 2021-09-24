@@ -1,0 +1,32 @@
+.error-container {
+	border: 3px solid $cRed;
+	width: 100vw;
+  margin-top: 24px;
+
+  .error-title {
+    color: $cGray;
+		font-family: "Titillium+Web", sans-serif;
+		font-size: 2.2rem;
+		font-weight: 700;
+  }
+
+  .error-p {
+		color: $cGray;
+  	font-family: "Ubuntu", sans-serif;
+  	text-decoration: none;
+  	font-size: 1.7rem;
+  	font-weight: 500;
+  }
+
+  .error-a {
+  	color: $cGray;
+  	font-family: "Ubuntu", sans-serif;
+  	text-decoration: none;
+  	font-size: 1.7rem;
+  	font-weight: 500;
+
+		&:hover {
+			font-weight: 700;
+		}
+  }
+}
