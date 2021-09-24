@@ -41,7 +41,7 @@
 
 .auth-form p {
   margin-bottom: 12px;
-  color: $cYellow; /* text-secondary */
+  color: $cYellow;
   font-size: 1.8rem;
   font-weight: 800;
 }
@@ -64,21 +64,11 @@
 
 .auth-form button,
 .auth-form input[type="submit"] {
-  /* btn */
   display: inline-block;
   margin-left: 12px;
-  /*font-weight: 600;*/
-  /*text-transform: lowercase;*/
-  /*color: $cYellow;*/
   text-align: center;
   vertical-align: middle;
   user-select: none;
-  /*background-color: $cGray;*/
-  /*border: 1px solid $cGray;*/
-  /*padding: 0.5rem 1.5rem;*/
-  /*font-size: 1.2rem;*/
-  /*line-height: 1.5;*/
-  /*border-radius: 10px;*/
   cursor: pointer;
 
   background-color: $cGray;
@@ -104,7 +94,7 @@
 }
 
 .auth-form a {
-  color: $cRed; /* text-info */
+  color: $cRed;
   text-decoration: none;
   font-size: 1.4rem;
   font-weight: 300;
@@ -115,6 +105,19 @@
 }
 
 /* --- allauth media queries --- */
+
+@media (max-width: 1061px) {
+  #already-premium-page-title {
+    font-size: 2.4rem;
+    text-align: center;
+  }
+}
+
+@media (max-width: 831px) {
+  #already-premium-page-title {
+    font-size: 2.2rem;
+  }
+}
 
 @media (max-width: 769px) {
   .auth-form {
@@ -142,6 +145,12 @@
   .auth-form button,
   .auth-form input[type="submit"] {
     font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 429px) {
+  #already-premium-page-title {
+    font-size: 1.9rem;
   }
 }
 

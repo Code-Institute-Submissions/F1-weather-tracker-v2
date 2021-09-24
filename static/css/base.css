@@ -481,7 +481,6 @@ body {
 .auth-form p {
   margin-bottom: 12px;
   color: #FFC929;
-  /* text-secondary */
   font-size: 1.8rem;
   font-weight: 800;
 }
@@ -516,24 +515,14 @@ body {
 
 .auth-form button,
 .auth-form input[type="submit"] {
-  /* btn */
   display: inline-block;
   margin-left: 12px;
-  /*font-weight: 600;*/
-  /*text-transform: lowercase;*/
-  /*color: $cYellow;*/
   text-align: center;
   vertical-align: middle;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
-  /*background-color: $cGray;*/
-  /*border: 1px solid $cGray;*/
-  /*padding: 0.5rem 1.5rem;*/
-  /*font-size: 1.2rem;*/
-  /*line-height: 1.5;*/
-  /*border-radius: 10px;*/
   cursor: pointer;
   background-color: #211F22;
   color: #FFC929;
@@ -560,7 +549,6 @@ body {
 
 .auth-form a {
   color: #FF4040;
-  /* text-info */
   text-decoration: none;
   font-size: 1.4rem;
   font-weight: 300;
@@ -571,6 +559,19 @@ body {
 }
 
 /* --- allauth media queries --- */
+@media (max-width: 1061px) {
+  #already-premium-page-title {
+    font-size: 2.4rem;
+    text-align: center;
+  }
+}
+
+@media (max-width: 831px) {
+  #already-premium-page-title {
+    font-size: 2.2rem;
+  }
+}
+
 @media (max-width: 769px) {
   .auth-form {
     width: 70%;
@@ -594,6 +595,12 @@ body {
   .auth-form button,
   .auth-form input[type="submit"] {
     font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 429px) {
+  #already-premium-page-title {
+    font-size: 1.9rem;
   }
 }
 
@@ -1253,6 +1260,71 @@ body {
 
 .hide-input {
   display: none;
+}
+
+/* --- premium pages media queries --- */
+@media (max-width: 631px) {
+  .page-title {
+    font-size: 2.4rem;
+  }
+  .premium-p {
+    font-size: 1.4rem;
+  }
+  .form-options-container label {
+    font-size: 1.3rem;
+  }
+  .form-options-container select {
+    padding: 5px;
+    font-size: 1.2rem;
+  }
+  .stripe-element-container {
+    padding: 12px;
+  }
+  .StripeElement {
+    height: 38px;
+    width: 330px;
+    padding: 6px;
+  }
+}
+
+@media (max-width: 410px) {
+  .page-title {
+    font-size: 2.1rem;
+  }
+  .premium-p {
+    font-size: 1.3rem;
+    margin: 12px;
+  }
+  .form-options-container label {
+    font-size: 1.2rem;
+    margin-bottom: 8px;
+  }
+  .form-options-container select {
+    padding: 4px;
+    font-size: 1.1rem;
+  }
+  .stripe-element-container {
+    padding: 10px;
+  }
+  .StripeElement {
+    width: 280px;
+  }
+}
+
+@media (max-width: 341px) {
+  .page-title {
+    font-size: 1.9rem;
+  }
+  .premium-p {
+    font-size: 1.2rem;
+    margin: 10px;
+  }
+  .stripe-element-container {
+    padding: 8px;
+  }
+  .StripeElement {
+    width: 240px;
+  }
 }
 
 .error-container {
