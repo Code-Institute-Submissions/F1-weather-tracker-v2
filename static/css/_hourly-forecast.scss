@@ -1,34 +1,80 @@
+/* --- hourly forecast page --- */
+
 .hourly-weather-cards-container {
-	margin-top: 24px;
-	flex-wrap: wrap;
+  margin-top: 24px;
+  flex-wrap: wrap;
 
-	.hourly-weather-card {
-		margin: 12px 6px;
-		min-width: 50px;
-		padding: 4px;
-		font-family: "Inter", sans-serif;
-		font-size: 1.1rem;
-		font-weight: 500;
-		border-radius: 10px;
-		background: $cGray;
-		p {
-			margin: 2px;
-		}
+  .hourly-weather-card {
+    margin: 10px 6px;
+    min-width: 60px;
+    padding: 4px 8px;
+    font-family: "Inter", sans-serif;
+    font-size: 1.2rem;
+    font-weight: 500;
+    border-radius: 10px;
+    background: $cGray;
+    p {
+      margin: 1px;
+    }
 
-		.hourly-date {
-			color: $cYellow;
-		}
+    .hourly-date {
+      color: $cYellow;
+    }
 
-		.hourly-time {
-			color: $cYellow;
-		}
+    .hourly-time {
+      color: $cYellow;
+    }
 
-		.hourly-temp {
-			color: $cRed;
-		}
+    .hourly-temp {
+      color: $cRed;
+    }
 
-		.hourly-precip, .hourly-rain {
-			color: $cBlue;
-		}
-	}
+    .hourly-precip,
+    .hourly-rain {
+      color: $cBlue;
+    }
+  }
+}
+
+/* --- hourly forecast page media queries --- */
+
+@media (max-width: 778px) {
+  .hourly-weather-cards-container {
+    margin-top: 16px;
+
+    .hourly-weather-card {
+      margin: 8px 5px;
+      min-width: 56px;
+      padding: 4px 8px;
+      font-size: 1.1rem;
+    }
+  }
+}
+
+@media (max-width: 441px) {
+  .hourly-weather-cards-container {
+    margin-top: 12px;
+
+    .hourly-weather-card {
+      margin: 5px 4px;
+      min-width: 50px;
+      padding: 4px 6px;
+      font-size: 1rem;
+    }
+  }
+}
+
+@media (max-width: 341px) {
+  .hourly-weather-cards-container {
+    .hourly-weather-card {
+      margin: 4px 3px;
+      min-width: 46px;
+      padding: 4px;
+      font-size: 0.9rem;
+
+      p {
+        margin: 0.5px;
+      }
+    }
+  }
 }
