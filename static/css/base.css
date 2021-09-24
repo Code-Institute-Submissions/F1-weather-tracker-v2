@@ -1148,6 +1148,7 @@ body {
   }
 }
 
+/* --- daily forecast page --- */
 .local-time-container {
   margin-top: 16px;
   height: 32px;
@@ -1225,7 +1226,7 @@ body {
 .daily-weather-cards-container .daily-weather-card {
   margin: 16px 12px;
   min-width: 130px;
-  padding: 6px;
+  padding: 8px;
   font-family: "Inter", sans-serif;
   font-size: 1.4rem;
   font-weight: 600;
@@ -1234,7 +1235,7 @@ body {
 }
 
 .daily-weather-cards-container .daily-weather-card p {
-  margin: 4px;
+  margin: 6px;
 }
 
 .daily-weather-cards-container .daily-weather-card .daily-date {
@@ -1249,8 +1250,149 @@ body {
   color: #FF4040;
 }
 
-.daily-weather-cards-container .daily-weather-card .daily-precip, .daily-weather-cards-container .daily-weather-card .daily-rain {
+.daily-weather-cards-container .daily-weather-card .daily-precip,
+.daily-weather-cards-container .daily-weather-card .daily-rain {
   color: #509CFF;
+}
+
+/* --- daily forecast page media queries --- */
+@media (max-width: 995px) {
+  .schedule-container {
+    width: 60%;
+  }
+  .schedule-container .schedule-title {
+    font-size: 1.7rem;
+  }
+  .schedule-container .schedule-title span {
+    font-size: 1.5rem;
+  }
+  .schedule-container .schedule-session {
+    font-size: 1.7rem;
+  }
+  .schedule-container .schedule-session span {
+    font-size: 1.9rem;
+  }
+}
+
+@media (max-width: 881px) {
+  .local-time-container {
+    width: 60%;
+    font-size: 1.9rem;
+  }
+  .local-time-container span {
+    font-size: 1.7rem;
+  }
+  .daily-weather-cards-container {
+    margin-top: 8px;
+  }
+  .daily-weather-cards-container .daily-weather-card {
+    margin: 14px 10px;
+    min-width: 120px;
+    padding: 6px;
+    font-size: 1.2rem;
+  }
+  .daily-weather-cards-container .daily-weather-card p {
+    margin: 5px;
+  }
+}
+
+@media (max-width: 591px) {
+  .schedule-container {
+    width: 70%;
+  }
+  .schedule-container .schedule-title {
+    font-size: 1.5rem;
+  }
+  .schedule-container .schedule-title span {
+    font-size: 1.3rem;
+  }
+  .schedule-container .schedule-session {
+    font-size: 1.5rem;
+  }
+  .schedule-container .schedule-session span {
+    font-size: 1.7rem;
+  }
+  .daily-weather-cards-container .daily-weather-card {
+    margin: 8px;
+    min-width: 110px;
+    font-size: 1.1rem;
+  }
+  .daily-weather-cards-container .daily-weather-card p {
+    margin: 3px;
+  }
+}
+
+@media (max-width: 477px) {
+  .local-time-container {
+    width: 70%;
+    font-size: 1.8rem;
+  }
+  .local-time-container span {
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 425px) {
+  .schedule-container {
+    width: 80%;
+    margin-top: 18px;
+  }
+}
+
+@media (max-width: 391px) {
+  .schedule-container .schedule-title {
+    font-size: 1.3rem;
+  }
+  .schedule-container .schedule-title span {
+    font-size: 1.1rem;
+  }
+  .schedule-container .schedule-session {
+    padding: 6px;
+    font-size: 1.3rem;
+  }
+  .schedule-container .schedule-session span {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 341px) {
+  .schedule-container {
+    width: 90%;
+  }
+  .schedule-container .schedule-title {
+    font-size: 1.2rem;
+  }
+  .schedule-container .schedule-title span {
+    font-size: 1rem;
+  }
+  .schedule-container .schedule-session {
+    padding: 4px;
+    font-size: 1.1rem;
+  }
+  .schedule-container .schedule-session span {
+    font-size: 1.3rem;
+  }
+  .daily-weather-cards-container .daily-weather-card {
+    margin: 4px;
+    min-width: 90px;
+    padding: 4px;
+    font-size: 0.9rem;
+  }
+  .daily-weather-cards-container .daily-weather-card p {
+    margin: 2px;
+  }
+}
+
+@media (max-width: 311px) {
+  .local-time-container {
+    height: 28px;
+    width: 76%;
+    font-size: 1.4rem;
+  }
+  .local-time-container span {
+    margin-left: 4px;
+    font-size: 1.2rem;
+  }
 }
 
 .hourly-weather-cards-container {
