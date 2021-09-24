@@ -22,3 +22,46 @@
     }
   }
 }
+
+/* --- footer media queries --- */ 
+
+@media (max-width: 561px) {
+  #base-footer {
+  
+    p {
+      font-size: 1.5rem;
+  
+      a {
+        font-size: 1.4rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 377px) {
+  #base-footer {
+    min-height: 44px;
+
+    p {
+      font-size: 1.3rem;
+  
+      a {
+        font-size: 1.2rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 321px) {
+  #base-footer {
+    min-height: 38px;
+
+    p {
+      font-size: 1.2rem;
+  
+      a {
+        font-size: 1.1rem;
+      }
+    }
+  }
+}

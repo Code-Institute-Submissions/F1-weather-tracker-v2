@@ -46,3 +46,15 @@
     width: 65%;
   }
 }
+
+@media (max-width: 770px) {
+  #content-container {
+    width: 85%;
+  }
+}
+
+@media (max-width: 425px) {
+  #content-container {
+    width: 98%;
+  }
+}
