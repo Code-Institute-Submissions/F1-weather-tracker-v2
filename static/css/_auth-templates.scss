@@ -65,29 +65,39 @@
   /* btn */
   display: inline-block;
   margin-left: 12px;
-  font-weight: 600;
-  text-transform: lowercase;
-  color: $cYellow;
+  /*font-weight: 600;*/
+  /*text-transform: lowercase;*/
+  /*color: $cYellow;*/
   text-align: center;
   vertical-align: middle;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
-  background-color: $cGray;
-  border: 1px solid $cGray;
-  padding: 0.5rem 1.5rem;
-  font-size: 1.2rem;
-  line-height: 1.5;
-  border-radius: 10px;
+  /*background-color: $cGray;*/
+  /*border: 1px solid $cGray;*/
+  /*padding: 0.5rem 1.5rem;*/
+  /*font-size: 1.2rem;*/
+  /*line-height: 1.5;*/
+  /*border-radius: 10px;*/
   cursor: pointer;
+
+  background-color: $cGray;
+  color: $cYellow;
+  font-family: "Ubuntu", sans-serif;
+	padding: 8px;
+  border: none;
+	border-radius: 5px;
+  text-decoration: none;
+	text-transform: uppercase;
+  font-size: 1.2rem;
+  font-weight: 500;
 }
 
 .auth-form button:hover,
 .auth-form input[type="submit"]:hover {
-  color: $cYellow;
-  border-color: $cGray;
   transform: scale(1.05);
+}
+
+.password-reset-btn {
+  width: 50% !important;
 }
 
 .auth-form a {
