@@ -1,67 +1,80 @@
+.homepage-title {
+  color: $cGray;
+  font-family: "Titillium+Web", sans-serif;
+  font-size: 3rem;
+  font-weight: 800;
+  margin-bottom: 8px;
+}
+
+.hero-container {
+  width: 100%;
+  flex-wrap: wrap;
+}
+
 .calendar-ad {
-  width: 300px;
-  height: 140px;
-  border: 3px solid $cGray;
+  width: 60%;
   border-radius: 10px;
-	padding: 16px;
-	background: #ffec95;
-  margin-top: 16px;
+	padding: 24px 48px;
+  margin: 16px;
+  background: $cRed;
 
   p {
-    font-size: 1.6rem;
-    font-weight: 700;
-    color: $cRed;
-		margin-bottom: 16px;
-		text-align: justify;
+    color: $cGray;
+		font-family: "Titillium+Web", sans-serif;
+		font-size: 2.2rem;
+		font-weight: 700;
+		margin-bottom: 24px;
+		text-align: center;
     text-justify: center;
   }
 
   a {
 		background-color: $cGray;
     color: $cRed;
-		padding: 6px;
+    font-family: "Ubuntu", sans-serif;
+		padding: 10px 8px;
 		border-radius: 5px;
     text-decoration: none;
 		text-transform: uppercase;
-    font-size: 1.8rem;
-    font-weight: 400;
+    font-size: 1.7rem;
+    font-weight: 500;
 
     &:hover {
-			transform: scale(1.05);
+			transform: scale(1.08);
     }
   }
 }
 
 .register-ad {
-  width: 300px;
-  height: 140px;
-  border: 3px solid $cGray;
+  width: 60%;
   border-radius: 10px;
-	padding: 16px;
-	background: #52496e;
-  margin-top: 16px;
+	padding: 24px 48px;
+  margin: 16px;
+  background: $cYellow;
 
   p {
-    font-size: 1.6rem;
-    font-weight: 700;
-    color: $cYellow;
-		margin-bottom: 16px;
-		text-align: justify;
+    color: $cGray;
+		font-family: "Titillium+Web", sans-serif;
+		font-size: 2.2rem;
+		font-weight: 700;
+		margin-bottom: 24px;
+		text-align: center;
     text-justify: center;
   }
 
   a {
 		background-color: $cGray;
     color: $cYellow;
-		padding: 6px;
+    font-family: "Ubuntu", sans-serif;
+		padding: 10px 8px;
 		border-radius: 5px;
     text-decoration: none;
 		text-transform: uppercase;
-    font-size: 1.8rem;
-    font-weight: 400;
+    font-size: 1.7rem;
+    font-weight: 500;
 
     &:hover {
-			transform: scale(1.05);
+			transform: scale(1.08);
     }
   }
 }
