@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+<h1 class="homepage-title">User profile</h1>
+<div class="profile-container flex-col-ca-cj">
+    <p class="email-sub">Email:</p>
+    <p class="email-user">{{ user.email }}</p>
+    <p class="premium-sub">Premium member:</p>
+    {% if request.user.premium %}
+    <p class="premium-true">Yes</p>
+    {% else %}
+    <p class="premium-false">No</p>
+    {% endif %}
+</div>
+{% endblock %}

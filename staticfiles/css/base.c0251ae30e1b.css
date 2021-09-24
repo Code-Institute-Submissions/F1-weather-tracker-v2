@@ -384,42 +384,30 @@ body {
   /* btn */
   display: inline-block;
   margin-left: 12px;
-  /*font-weight: 600;*/
-  /*text-transform: lowercase;*/
-  /*color: $cYellow;*/
+  font-weight: 600;
+  text-transform: lowercase;
+  color: #FFC929;
   text-align: center;
   vertical-align: middle;
   -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
-  /*background-color: $cGray;*/
-  /*border: 1px solid $cGray;*/
-  /*padding: 0.5rem 1.5rem;*/
-  /*font-size: 1.2rem;*/
-  /*line-height: 1.5;*/
-  /*border-radius: 10px;*/
-  cursor: pointer;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
   background-color: #211F22;
-  color: #FFC929;
-  font-family: "Ubuntu", sans-serif;
-  padding: 8px;
-  border: none;
-  border-radius: 5px;
-  text-decoration: none;
-  text-transform: uppercase;
+  border: 1px solid #211F22;
+  padding: 0.5rem 1.5rem;
   font-size: 1.2rem;
-  font-weight: 500;
+  line-height: 1.5;
+  border-radius: 10px;
+  cursor: pointer;
 }
 
 .auth-form button:hover,
 .auth-form input[type="submit"]:hover {
+  color: #FFC929;
+  border-color: #211F22;
   -webkit-transform: scale(1.05);
           transform: scale(1.05);
-}
-
-.password-reset-btn {
-  width: 50% !important;
 }
 
 .auth-form a {
@@ -434,88 +422,74 @@ body {
   font-weight: bold;
 }
 
-.homepage-title {
-  color: #211F22;
-  font-family: "Titillium+Web", sans-serif;
-  font-size: 3rem;
-  font-weight: 800;
-  margin-bottom: 8px;
-}
-
-.hero-container {
-  width: 100%;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-
 .calendar-ad {
-  width: 60%;
+  width: 300px;
+  height: 140px;
+  border: 3px solid #211F22;
   border-radius: 10px;
-  padding: 24px 48px;
-  margin: 16px;
-  background: #FF4040;
+  padding: 16px;
+  background: #ffec95;
+  margin-top: 16px;
 }
 
 .calendar-ad p {
-  color: #211F22;
-  font-family: "Titillium+Web", sans-serif;
-  font-size: 2.2rem;
+  font-size: 1.6rem;
   font-weight: 700;
-  margin-bottom: 24px;
-  text-align: center;
+  color: #FF4040;
+  margin-bottom: 16px;
+  text-align: justify;
   text-justify: center;
 }
 
 .calendar-ad a {
   background-color: #211F22;
   color: #FF4040;
-  font-family: "Ubuntu", sans-serif;
-  padding: 10px 8px;
+  padding: 6px;
   border-radius: 5px;
   text-decoration: none;
   text-transform: uppercase;
-  font-size: 1.7rem;
-  font-weight: 500;
+  font-size: 1.8rem;
+  font-weight: 400;
 }
 
 .calendar-ad a:hover {
-  -webkit-transform: scale(1.08);
-          transform: scale(1.08);
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
 }
 
 .register-ad {
-  width: 60%;
+  width: 300px;
+  height: 140px;
+  border: 3px solid #211F22;
   border-radius: 10px;
-  padding: 24px 48px;
-  margin: 16px;
-  background: #FFC929;
+  padding: 16px;
+  background: #52496e;
+  margin-top: 16px;
 }
 
 .register-ad p {
-  color: #211F22;
-  font-family: "Titillium+Web", sans-serif;
-  font-size: 2.2rem;
+  font-size: 1.6rem;
   font-weight: 700;
-  margin-bottom: 24px;
-  text-align: center;
+  color: #FFC929;
+  margin-bottom: 16px;
+  text-align: justify;
   text-justify: center;
 }
 
 .register-ad a {
   background-color: #211F22;
   color: #FFC929;
-  font-family: "Ubuntu", sans-serif;
-  padding: 10px 8px;
+  padding: 6px;
   border-radius: 5px;
   text-decoration: none;
   text-transform: uppercase;
-  font-size: 1.7rem;
-  font-weight: 500;
+  font-size: 1.8rem;
+  font-weight: 400;
 }
 
 .register-ad a:hover {
-  -webkit-transform: scale(1.08);
-          transform: scale(1.08);
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
 }
 
 .page-title {
@@ -1002,42 +976,4 @@ body {
 .error-container .error-a:hover {
   font-weight: 700;
 }
-
-.profile-container {
-  width: 50%;
-  padding: 20px;
-  border: 2px solid #FFC929;
-  border-radius: 10px;
-}
-
-.profile-container .email-sub,
-.profile-container .premium-sub {
-  margin-bottom: 6px;
-  color: #211F22;
-  font-family: "Ubuntu", sans-serif;
-  font-size: 1.6rem;
-  font-weight: 700;
-}
-
-.profile-container .email-user {
-  margin-bottom: 24px;
-  color: #211F22;
-  font-family: "Ubuntu", sans-serif;
-  font-size: 1.6rem;
-  font-weight: 400;
-}
-
-.profile-container .premium-true {
-  color: #A9DC76;
-  font-family: "Ubuntu", sans-serif;
-  font-size: 1.8rem;
-  font-weight: 700;
-}
-
-.profile-container .premium-false {
-  color: #FF4040;
-  font-family: "Ubuntu", sans-serif;
-  font-size: 1.8rem;
-  font-weight: 700;
-}
-/*# sourceMappingURL=base.css.map */
+/*# sourceMappingURL=base.c0251ae30e1b.css.map */

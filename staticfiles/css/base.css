@@ -945,31 +945,31 @@ body {
 }
 
 .error-container {
-  border: 3px solid #FF4040;
-  /*width: 100vw;*/
   margin-top: 24px;
 }
 
 .error-container .error-title {
+  margin-bottom: 16px;
   color: #211F22;
   font-family: "Titillium+Web", sans-serif;
-  font-size: 2.2rem;
+  font-size: 2.6rem;
   font-weight: 700;
 }
 
 .error-container .error-p {
+  margin-bottom: 16px;
   color: #211F22;
   font-family: "Ubuntu", sans-serif;
   text-decoration: none;
-  font-size: 1.7rem;
+  font-size: 1.6rem;
   font-weight: 500;
 }
 
 .error-container .error-a {
-  color: #211F22;
+  color: #FF4040;
   font-family: "Ubuntu", sans-serif;
   text-decoration: none;
-  font-size: 1.7rem;
+  font-size: 1.4rem;
   font-weight: 500;
 }
 
