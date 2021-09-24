@@ -1,3 +1,5 @@
+/* --- events page --- */
+
 .page-title {
   color: $cGray;
     font-family: "Titillium+Web", sans-serif;
@@ -85,4 +87,62 @@
 
 .future-event {
   color: $cGreen !important;
+}
+
+/* --- events page media queries --- */
+
+@media (max-width: 1145px) {
+  .event-container {
+    width: 150px;
+    height: 170px;
+  }
+}
+
+@media (max-width: 883px) {
+  .event-container {
+    width: 140px;
+    height: 150px;
+    margin: 12px;
+  }
+
+  .circuit-info-container {
+    p {
+      font-size: 1.4rem;
+    }
+  }
+}
+
+@media (max-width: 621px) {
+  .event-container {
+    width: 130px;
+    height: 140px;
+    margin: 8px;
+  }
+
+  .circuit-info-container {
+    p {
+      font-size: 1.3rem;
+    }
+  }
+}
+
+@media (max-width: 331px) {
+  .event-container {
+    width: 120px;
+    height: 130px;
+  }
+
+  .circuit-info-container {
+    p {
+      font-size: 1.2rem;
+    }
+  }
+}
+
+@media (max-width: 309px) {
+  .event-container {
+    width: 110px;
+    height: 120px;
+    margin: 6px;
+  }
 }
