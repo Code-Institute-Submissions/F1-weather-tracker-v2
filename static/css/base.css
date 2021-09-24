@@ -325,9 +325,6 @@ body {
       -ms-flex-positive: 1;
           flex-grow: 1;
   padding: 12px;
-  /*background-color: darken($cWhite, 10%); remove later */
-  border-left: 1px dashed red;
-  border-right: 1px dashed red;
 }
 
 /* --- media queries --- */
@@ -376,6 +373,12 @@ body {
 @media (max-width: 425px) {
   #content-container {
     width: 98%;
+  }
+}
+
+@media (max-width: 331px) {
+  #content-container {
+    padding: 6px;
   }
 }
 
