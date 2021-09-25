@@ -1,3 +1,5 @@
+/* --- home page --- */
+
 .homepage-title {
   color: $cGray;
   font-family: "Titillium+Web", sans-serif;
@@ -14,33 +16,33 @@
 .calendar-ad {
   width: 60%;
   border-radius: 10px;
-	padding: 24px 48px;
+  padding: 24px 48px;
   margin: 16px;
   background: $cRed;
 
   p {
     color: $cGray;
-		font-family: "Titillium+Web", sans-serif;
-		font-size: 2.2rem;
-		font-weight: 700;
-		margin-bottom: 24px;
-		text-align: center;
+    font-family: "Titillium+Web", sans-serif;
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin-bottom: 24px;
+    text-align: center;
     text-justify: center;
   }
 
   a {
-		background-color: $cGray;
+    background-color: $cGray;
     color: $cRed;
     font-family: "Ubuntu", sans-serif;
-		padding: 10px 8px;
-		border-radius: 5px;
+    padding: 10px 8px;
+    border-radius: 5px;
     text-decoration: none;
-		text-transform: uppercase;
+    text-transform: uppercase;
     font-size: 1.7rem;
     font-weight: 500;
 
     &:hover {
-			transform: scale(1.08);
+      transform: scale(1.08);
     }
   }
 }
@@ -48,38 +50,38 @@
 .register-ad {
   width: 60%;
   border-radius: 10px;
-	padding: 24px 48px;
+  padding: 24px 48px;
   margin: 16px;
   background: $cYellow;
 
   p {
     color: $cGray;
-		font-family: "Titillium+Web", sans-serif;
-		font-size: 2.2rem;
-		font-weight: 700;
-		margin-bottom: 24px;
-		text-align: center;
+    font-family: "Titillium+Web", sans-serif;
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin-bottom: 24px;
+    text-align: center;
     text-justify: center;
   }
 
   a {
-		background-color: $cGray;
+    background-color: $cGray;
     color: $cYellow;
     font-family: "Ubuntu", sans-serif;
-		padding: 10px 8px;
-		border-radius: 5px;
+    padding: 10px 8px;
+    border-radius: 5px;
     text-decoration: none;
-		text-transform: uppercase;
+    text-transform: uppercase;
     font-size: 1.7rem;
     font-weight: 500;
 
     &:hover {
-			transform: scale(1.08);
+      transform: scale(1.08);
     }
   }
 }
 
-/* --- home page media queries --- */ 
+/* --- home page media queries --- */
 
 @media (max-width: 875px) {
   .homepage-title {
@@ -88,13 +90,13 @@
 
   .calendar-ad {
     width: 75%;
-  
+
     p {
       font-size: 1.9rem;
       font-weight: 700;
       margin-bottom: 16px;
     }
-  
+
     a {
       padding: 8px 6px;
       font-size: 1.5rem;
@@ -103,13 +105,13 @@
 
   .register-ad {
     width: 75%;
-  
+
     p {
       font-size: 1.9rem;
       font-weight: 700;
       margin-bottom: 16px;
     }
-  
+
     a {
       padding: 8px 6px;
       font-size: 1.5rem;
@@ -124,7 +126,7 @@
 
   .calendar-ad {
     width: 90%;
-  
+
     p {
       font-size: 1.7rem;
     }
@@ -132,7 +134,7 @@
 
   .register-ad {
     width: 90%;
-  
+
     p {
       font-size: 1.7rem;
     }
@@ -148,7 +150,7 @@
   .calendar-ad {
     width: 95%;
     padding: 12px 14px;
-  
+
     p {
       font-size: 1.5rem;
       margin-bottom: 11px;
@@ -162,7 +164,7 @@
   .register-ad {
     width: 95%;
     padding: 12px 14px;
-  
+
     p {
       font-size: 1.5rem;
       margin-bottom: 11px;
@@ -181,7 +183,7 @@
 
   .calendar-ad {
     padding: 8px 10px;
-  
+
     p {
       font-size: 1.4rem;
       margin-bottom: 9px;
@@ -195,7 +197,7 @@
 
   .register-ad {
     padding: 8px 10px;
-  
+
     p {
       font-size: 1.4rem;
       margin-bottom: 9px;

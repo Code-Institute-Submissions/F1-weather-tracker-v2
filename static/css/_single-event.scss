@@ -71,98 +71,98 @@
 /* --- single event page media queries --- */
 
 @media (max-width: 1051px) {
-	.flag-trackname-container {
-		width: 74%;
-	}
+  .flag-trackname-container {
+    width: 74%;
+  }
 }
 
 @media (max-width: 837px) {
-	.flag-trackname-container {
-		width: 82%;
-	}
+  .flag-trackname-container {
+    width: 82%;
+  }
 
-	.forecast-options-container .forecast-option {
+  .forecast-options-container .forecast-option {
     height: 140px;
     width: 140px;
     font-size: 2.2rem;
-	}
+  }
 }
 
 @media (max-width: 599px) {
-	.flag-trackname-container {
-		width: 90%;
-	}
+  .flag-trackname-container {
+    width: 90%;
+  }
 
-	.flag-trackname-container .track-name-container h3 {
+  .flag-trackname-container .track-name-container h3 {
     font-size: 1.8rem;
-	}
+  }
 }
 
 @media (max-width: 515px) {
-	.flag-trackname-container {
-		width: 100%;
-	}
+  .flag-trackname-container {
+    width: 100%;
+  }
 
-	.forecast-options-container .forecast-option {
+  .forecast-options-container .forecast-option {
     height: 126px;
     width: 126px;
     font-size: 2.1rem;
-		margin: 16px;
-	}
+    margin: 16px;
+  }
 }
 
 @media (max-width: 410px) {
-	.flag-trackname-container{
-		height: 34px;
-	}
+  .flag-trackname-container {
+    height: 34px;
+  }
 
-	.flag-trackname-container .track-name-container h3 {
+  .flag-trackname-container .track-name-container h3 {
     font-size: 1.6rem;
-	}
+  }
 
-	.forecast-options-container .forecast-option {
+  .forecast-options-container .forecast-option {
     height: 120px;
     width: 120px;
     font-size: 2rem;
-		margin: 16px;
+    margin: 16px;
 
-		span {
+    span {
       font-size: 1.6rem;
     }
-	}
+  }
 }
 
 @media (max-width: 359px) {
-	.flag-trackname-container .track-name-container h3 {
+  .flag-trackname-container .track-name-container h3 {
     font-size: 1.4rem;
-	}
+  }
 
-	.forecast-options-container .forecast-option {
+  .forecast-options-container .forecast-option {
     height: 120px;
     width: 120px;
     font-size: 1.6rem;
-		margin: 10px;
-		padding: 8px;
+    margin: 10px;
+    padding: 8px;
 
-		span {
+    span {
       font-size: 1.4rem;
     }
-	}
+  }
 }
 
 @media (max-width: 319px) {
-	.flag-trackname-container .track-name-container h3 {
+  .flag-trackname-container .track-name-container h3 {
     font-size: 1.2rem;
-	}
+  }
 
-	.forecast-options-container .forecast-option {
-		height: 110px;
+  .forecast-options-container .forecast-option {
+    height: 110px;
     width: 110px;
     font-size: 1.5rem;
     margin: 6px;
 
-		span {
+    span {
       font-size: 1.2rem;
     }
-	}
+  }
 }

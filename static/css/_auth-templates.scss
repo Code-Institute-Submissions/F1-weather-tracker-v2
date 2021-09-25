@@ -1,6 +1,7 @@
 /* --- allauth templates --- */
 
 /* login.html */
+
 .auth-h1 {
   margin: 16px 0px;
 }
@@ -19,7 +20,8 @@
   }
 }
 
-.auth-p , .auth-a {
+.auth-p,
+.auth-a {
   font-size: 1.6rem;
   text-align: center;
 }
@@ -51,7 +53,7 @@
   border-radius: 0px;
   padding: 5px;
   width: 100%;
-  background-color:#f3f3f3;
+  background-color: #f3f3f3;
 }
 
 .auth-form label:not([for="id_remember"]) {
@@ -74,11 +76,11 @@
   background-color: $cGray;
   color: $cYellow;
   font-family: "Ubuntu", sans-serif;
-	padding: 8px;
+  padding: 8px;
   border: none;
-	border-radius: 5px;
+  border-radius: 5px;
   text-decoration: none;
-	text-transform: uppercase;
+  text-transform: uppercase;
   font-size: 1.2rem;
   font-weight: 500;
 }

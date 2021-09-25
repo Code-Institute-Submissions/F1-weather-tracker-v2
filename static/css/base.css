@@ -110,7 +110,7 @@ body {
 #base-body {
   width: 100%;
   min-height: 100vh;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
 }
 
 /* --- header --- */
@@ -123,8 +123,8 @@ body {
       -ms-flex-direction: row;
           flex-direction: row;
   width: 100%;
-  background-color: #211F22;
-  color: #FFC929;
+  background-color: #211f22;
+  color: #ffc929;
   min-height: 50px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -143,7 +143,7 @@ body {
 }
 
 #base-header h1 {
-  color: #FFC929;
+  color: #ffc929;
   font-family: "Ubuntu", sans-serif;
   font-size: 2.1rem;
   font-weight: 400;
@@ -175,7 +175,7 @@ body {
   display: block;
   width: 100%;
   height: 5px;
-  background-color: #FF4040;
+  background-color: #ff4040;
   margin: 6px 0px;
   -webkit-transition: 0.6s;
   transition: 0.6s;
@@ -204,7 +204,7 @@ body {
   min-height: 100vh;
   display: block;
   z-index: 2;
-  background-color: #FFC929;
+  background-color: #ffc929;
   padding-top: 60px;
   -webkit-transition: 0.4s;
   transition: 0.4s;
@@ -221,17 +221,17 @@ body {
   margin: 0 auto 16px;
   text-align: center;
   padding: 12px 16px;
-  background-color: #211F22;
+  background-color: #211f22;
   font-family: "Ubuntu", sans-serif;
   font-size: 2.1rem;
   font-weight: 400;
-  color: #FFC929;
+  color: #ffc929;
   text-decoration: none;
 }
 
 .mobile-nav a:hover {
-  background-color: #FF4040;
-  color: #211F22;
+  background-color: #ff4040;
+  color: #211f22;
 }
 
 /* --- header media queries */
@@ -385,8 +385,8 @@ body {
 /* --- footer --- */
 #base-footer {
   width: 100%;
-  background-color: #211F22;
-  color: #FFC929;
+  background-color: #211f22;
+  color: #ffc929;
   font-size: 1.8rem;
   min-height: 50px;
   -webkit-box-pack: center;
@@ -395,7 +395,7 @@ body {
 }
 
 #base-footer p {
-  color: #FFC929;
+  color: #ffc929;
   font-family: "Ubuntu", sans-serif;
   font-size: 1.8rem;
   font-weight: 300;
@@ -404,7 +404,7 @@ body {
 #base-footer p a {
   font-size: 1.6rem;
   font-style: italic;
-  color: #FF4040;
+  color: #ff4040;
   text-decoration: none;
 }
 
@@ -453,7 +453,7 @@ body {
 }
 
 .auth-a {
-  color: #FF4040;
+  color: #ff4040;
   text-decoration: none;
   font-weight: 300;
 }
@@ -462,7 +462,8 @@ body {
   font-weight: bold;
 }
 
-.auth-p, .auth-a {
+.auth-p,
+.auth-a {
   font-size: 1.6rem;
   text-align: center;
 }
@@ -471,7 +472,7 @@ body {
   width: 50%;
   padding: 20px;
   margin-top: 16px;
-  border: 2px solid #211F22;
+  border: 2px solid #211f22;
   border-radius: 10px;
 }
 
@@ -483,13 +484,13 @@ body {
 /* Allauth form formatting */
 .auth-form p {
   margin-bottom: 12px;
-  color: #FFC929;
+  color: #ffc929;
   font-size: 1.8rem;
   font-weight: 800;
 }
 
 .auth-form input {
-  border: 3px solid #211F22;
+  border: 3px solid #211f22;
   border-radius: 0px;
   padding: 5px;
   width: 100%;
@@ -501,19 +502,19 @@ body {
 }
 
 .auth-form input::-webkit-input-placeholder {
-  color: #FFC929;
+  color: #ffc929;
 }
 
 .auth-form input:-ms-input-placeholder {
-  color: #FFC929;
+  color: #ffc929;
 }
 
 .auth-form input::-ms-input-placeholder {
-  color: #FFC929;
+  color: #ffc929;
 }
 
 .auth-form input::placeholder {
-  color: #FFC929;
+  color: #ffc929;
 }
 
 .auth-form button,
@@ -527,8 +528,8 @@ body {
       -ms-user-select: none;
           user-select: none;
   cursor: pointer;
-  background-color: #211F22;
-  color: #FFC929;
+  background-color: #211f22;
+  color: #ffc929;
   font-family: "Ubuntu", sans-serif;
   padding: 8px;
   border: none;
@@ -551,7 +552,7 @@ body {
 }
 
 .auth-form a {
-  color: #FF4040;
+  color: #ff4040;
   text-decoration: none;
   font-size: 1.4rem;
   font-weight: 300;
@@ -623,8 +624,9 @@ body {
   }
 }
 
+/* --- home page --- */
 .homepage-title {
-  color: #211F22;
+  color: #211f22;
   font-family: "Titillium+Web", sans-serif;
   font-size: 3rem;
   font-weight: 800;
@@ -642,11 +644,11 @@ body {
   border-radius: 10px;
   padding: 24px 48px;
   margin: 16px;
-  background: #FF4040;
+  background: #ff4040;
 }
 
 .calendar-ad p {
-  color: #211F22;
+  color: #211f22;
   font-family: "Titillium+Web", sans-serif;
   font-size: 2.2rem;
   font-weight: 700;
@@ -656,8 +658,8 @@ body {
 }
 
 .calendar-ad a {
-  background-color: #211F22;
-  color: #FF4040;
+  background-color: #211f22;
+  color: #ff4040;
   font-family: "Ubuntu", sans-serif;
   padding: 10px 8px;
   border-radius: 5px;
@@ -677,11 +679,11 @@ body {
   border-radius: 10px;
   padding: 24px 48px;
   margin: 16px;
-  background: #FFC929;
+  background: #ffc929;
 }
 
 .register-ad p {
-  color: #211F22;
+  color: #211f22;
   font-family: "Titillium+Web", sans-serif;
   font-size: 2.2rem;
   font-weight: 700;
@@ -691,8 +693,8 @@ body {
 }
 
 .register-ad a {
-  background-color: #211F22;
-  color: #FFC929;
+  background-color: #211f22;
+  color: #ffc929;
   font-family: "Ubuntu", sans-serif;
   padding: 10px 8px;
   border-radius: 5px;
@@ -815,7 +817,7 @@ body {
 
 /* --- events page --- */
 .page-title {
-  color: #211F22;
+  color: #211f22;
   font-family: "Titillium+Web", sans-serif;
   font-size: 3rem;
   font-weight: 800;
@@ -889,7 +891,6 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background: red;
   padding: 0;
 }
 
@@ -909,7 +910,7 @@ body {
 
 .circuit-info-container p {
   overflow-wrap: break-word;
-  color: #211F22;
+  color: #211f22;
   font-family: "Titillium+Web", sans-serif;
   font-size: 1.6rem;
   font-weight: 600;
@@ -927,11 +928,11 @@ body {
 }
 
 .past-event {
-  color: #FF4040 !important;
+  color: #ff4040 !important;
 }
 
 .future-event {
-  color: #A9DC76 !important;
+  color: #a9dc76 !important;
 }
 
 /* --- events page media queries --- */
@@ -1021,7 +1022,7 @@ body {
 }
 
 .flag-trackname-container .track-name-container h3 {
-  color: #211F22;
+  color: #211f22;
   font-family: "Titillium+Web", sans-serif;
   font-size: 2rem;
   font-weight: 700;
@@ -1042,7 +1043,7 @@ body {
   width: 160px;
   background: #363237;
   text-align: center;
-  color: #FFC929;
+  color: #ffc929;
   font-family: "Titillium+Web", sans-serif;
   font-size: 2.6rem;
   font-weight: 600;
@@ -1158,7 +1159,7 @@ body {
   width: 40%;
   background: #e9e9e9cc;
   border-radius: 10px;
-  color: #211F22;
+  color: #211f22;
   font-family: "Titillium+Web", sans-serif;
   font-size: 2rem;
   font-weight: 700;
@@ -1174,7 +1175,7 @@ body {
 .schedule-container {
   margin-top: 24px;
   width: 50%;
-  color: #211F22;
+  color: #211f22;
   font-family: "Inter", sans-serif;
   border-radius: 10px;
   overflow: hidden;
@@ -1187,7 +1188,7 @@ body {
   font-weight: 700;
   background: #bebebe;
   padding: 8px;
-  border-bottom: 1px solid #211F22;
+  border-bottom: 1px solid #211f22;
 }
 
 .schedule-container .schedule-title span {
@@ -1234,7 +1235,7 @@ body {
   font-size: 1.4rem;
   font-weight: 600;
   border-radius: 10px;
-  background: #211F22;
+  background: #211f22;
 }
 
 .daily-weather-cards-container .daily-weather-card p {
@@ -1242,20 +1243,20 @@ body {
 }
 
 .daily-weather-cards-container .daily-weather-card .daily-date {
-  color: #FFC929;
+  color: #ffc929;
 }
 
 .daily-weather-cards-container .daily-weather-card .daily-mintemp {
-  color: #A9DC76;
+  color: #a9dc76;
 }
 
 .daily-weather-cards-container .daily-weather-card .daily-maxtemp {
-  color: #FF4040;
+  color: #ff4040;
 }
 
 .daily-weather-cards-container .daily-weather-card .daily-precip,
 .daily-weather-cards-container .daily-weather-card .daily-rain {
-  color: #509CFF;
+  color: #509cff;
 }
 
 /* --- daily forecast page media queries --- */
@@ -1413,7 +1414,7 @@ body {
   font-size: 1.2rem;
   font-weight: 500;
   border-radius: 10px;
-  background: #211F22;
+  background: #211f22;
 }
 
 .hourly-weather-cards-container .hourly-weather-card p {
@@ -1421,20 +1422,20 @@ body {
 }
 
 .hourly-weather-cards-container .hourly-weather-card .hourly-date {
-  color: #FFC929;
+  color: #ffc929;
 }
 
 .hourly-weather-cards-container .hourly-weather-card .hourly-time {
-  color: #FFC929;
+  color: #ffc929;
 }
 
 .hourly-weather-cards-container .hourly-weather-card .hourly-temp {
-  color: #FF4040;
+  color: #ff4040;
 }
 
 .hourly-weather-cards-container .hourly-weather-card .hourly-precip,
 .hourly-weather-cards-container .hourly-weather-card .hourly-rain {
-  color: #509CFF;
+  color: #509cff;
 }
 
 /* --- hourly forecast page media queries --- */
@@ -1477,7 +1478,7 @@ body {
 /* buy premium page */
 .premium-p {
   margin: 12px 16px 24px 16px;
-  color: #211F22;
+  color: #211f22;
   font-family: "Titillium+Web", sans-serif;
   font-size: 1.6rem;
   font-weight: 500;
@@ -1485,7 +1486,7 @@ body {
 }
 
 .premium-p span {
-  color: #FF4040;
+  color: #ff4040;
   font-style: italic;
 }
 
@@ -1503,7 +1504,7 @@ body {
 
 .stripe-element-container {
   padding: 16px;
-  border: 3px solid #A9DC76;
+  border: 3px solid #a9dc76;
   border-radius: 10px;
 }
 
@@ -1517,7 +1518,7 @@ body {
 
 .stripe-element-container #card-errors {
   padding: 8px;
-  color: #FF4040;
+  color: #ff4040;
 }
 
 .stripe-element-container .submit-payment-btn {
@@ -1525,8 +1526,8 @@ body {
   padding: 6px 12px;
   border: none;
   border-radius: 5px;
-  background: #211F22;
-  color: #FFC929;
+  background: #211f22;
+  color: #ffc929;
   font-family: "Titillium+Web", sans-serif;
   font-size: 1.4rem;
   font-weight: 500;
@@ -1535,11 +1536,11 @@ body {
 .stripe-element-container .submit-payment-btn:hover {
   -webkit-transform: scale(1.05);
           transform: scale(1.05);
-  border: 2px solid #FFC929;
+  border: 2px solid #ffc929;
 }
 
 .back-to-homepage {
-  color: #FF4040;
+  color: #ff4040;
   text-decoration: none;
   font-size: 1.8rem;
   font-weight: 400;
@@ -1568,12 +1569,12 @@ body {
 }
 
 .StripeElement--focus {
-  -webkit-box-shadow: 0 1px 3px 0 #A9DC76;
-          box-shadow: 0 1px 3px 0 #A9DC76;
+  -webkit-box-shadow: 0 1px 3px 0 #a9dc76;
+          box-shadow: 0 1px 3px 0 #a9dc76;
 }
 
 .StripeElement--invalid {
-  border-color: #FF4040;
+  border-color: #ff4040;
 }
 
 .StripeElement--webkit-autofill {
@@ -1649,13 +1650,14 @@ body {
   }
 }
 
+/* --- error pages --- */
 .error-container {
   margin-top: 24px;
 }
 
 .error-container .error-title {
   margin-bottom: 16px;
-  color: #211F22;
+  color: #211f22;
   font-family: "Titillium+Web", sans-serif;
   font-size: 2.6rem;
   font-weight: 700;
@@ -1663,7 +1665,7 @@ body {
 
 .error-container .error-p {
   margin-bottom: 16px;
-  color: #211F22;
+  color: #211f22;
   font-family: "Ubuntu", sans-serif;
   text-decoration: none;
   font-size: 1.6rem;
@@ -1671,7 +1673,7 @@ body {
 }
 
 .error-container .error-a {
-  color: #FF4040;
+  color: #ff4040;
   font-family: "Ubuntu", sans-serif;
   text-decoration: none;
   font-size: 1.4rem;
@@ -1686,14 +1688,14 @@ body {
 .profile-container {
   width: 50%;
   padding: 20px;
-  border: 2px solid #FFC929;
+  border: 2px solid #ffc929;
   border-radius: 10px;
 }
 
 .profile-container .email-sub,
 .profile-container .premium-sub {
   margin-bottom: 6px;
-  color: #211F22;
+  color: #211f22;
   font-family: "Ubuntu", sans-serif;
   font-size: 1.6rem;
   font-weight: 700;
@@ -1701,21 +1703,21 @@ body {
 
 .profile-container .email-user {
   margin-bottom: 24px;
-  color: #211F22;
+  color: #211f22;
   font-family: "Ubuntu", sans-serif;
   font-size: 1.6rem;
   font-weight: 400;
 }
 
 .profile-container .premium-true {
-  color: #A9DC76;
+  color: #a9dc76;
   font-family: "Ubuntu", sans-serif;
   font-size: 1.8rem;
   font-weight: 700;
 }
 
 .profile-container .premium-false {
-  color: #FF4040;
+  color: #ff4040;
   font-family: "Ubuntu", sans-serif;
   font-size: 1.8rem;
   font-weight: 700;
