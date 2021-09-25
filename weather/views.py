@@ -5,7 +5,10 @@ from .models import Schedule
 
 # Create your views here.
 def daily_forecast(request, event_id):
-    """ A view to show daily weather forecast data """
+    """
+    Render the daily weather forecast data page 
+    of the previously selected calendar event.
+    """
 
     event = get_object_or_404(Event, pk=event_id)
     schedule = get_object_or_404(Schedule, pk=event_id)
@@ -20,9 +23,9 @@ def daily_forecast(request, event_id):
 
 def hourly_forecast(request, event_id):
     """
-    A view to show hourly weather forecast data.
+    Render the hourly weather forecast data page.
     Redirects to the sign up page if the user is not logged in.
-    Redirects to the buy premium page if the user has no premium
+    Redirects to the buy premium page if the user has no premium 
     membership.
     """
 

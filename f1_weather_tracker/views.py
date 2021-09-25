@@ -2,6 +2,7 @@ from django.shortcuts import render
 
 # Create your views here.
 
+
 def error_400(request, exception, template_name='400.html'):
     return render(request, template_name)
 

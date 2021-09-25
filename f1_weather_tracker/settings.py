@@ -59,7 +59,9 @@ INSTALLED_APPS = [
     'premium',
 ]
 
-AUTH_USER_MODEL = 'accounts.CustomUser'  # custom user model
+# custom user model
+
+AUTH_USER_MODEL = 'accounts.CustomUser'
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -87,7 +89,10 @@ TEMPLATES = [
         'OPTIONS': {
             'context_processors': [
                 'django.template.context_processors.debug',
-                'django.template.context_processors.request',  # required by allauth
+
+                # required by allauth
+                'django.template.context_processors.request',
+
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
             ],
@@ -196,9 +201,15 @@ django_heroku.settings(locals())
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 
-# Email settings
+"""
+Email settings:
+(I commented this out / turned this off because on Heroku I was 
+getting SMTPAuthenticationError which broke the entire allauth functionality.
+My mentor told me email verification wasn't neccessary.) 
+"""
 
-""" if 'DEVELOPMENT' in os.environ:
+"""
+if 'DEVELOPMENT' in os.environ:
     EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
     DEFAULT_FROM_EMAIL = 'f1weather@example.com'
 else:
@@ -208,4 +219,5 @@ else:
     EMAIL_HOST = 'smtp.gmail.com'
     EMAIL_HOST_USER = os.environ.get('EMAIL_HOST_USER')
     EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASS')
-    DEFAULT_FROM_EMAIL = os.environ.get('EMAIL_HOST_USER') """
+    DEFAULT_FROM_EMAIL = os.environ.get('EMAIL_HOST_USER')
+    """

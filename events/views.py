@@ -4,7 +4,10 @@ from .models import Event
 
 # Create your views here.
 def all_events(request):
-    """ A view to show all events """
+    """
+    A view to show all events 
+    (render the formula 1 calendar)
+    """
 
     russia = Event.objects.get(event_id=2021001)
     turkey = Event.objects.get(event_id=2021002)
@@ -28,7 +31,10 @@ def all_events(request):
 
 
 def single_event(request, event_id):
-    """ A view to show individual event weather options """
+    """
+    A view to show individual event weather options 
+    for the previously selected calendar event
+    """
 
     event = get_object_or_404(Event, pk=event_id)
 

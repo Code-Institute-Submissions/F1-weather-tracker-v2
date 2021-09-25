@@ -1,8 +1,5 @@
-from django.shortcuts import render, get_object_or_404, redirect
+from django.shortcuts import render, redirect
 from django.urls import reverse
-#from django.http import JsonResponse
-#from accounts.models import CustomUser
-#from django.contrib.auth.models import User
 
 import stripe
 import os
@@ -13,7 +10,11 @@ stripe.api_key = os.getenv('STRIPE_API_KEY', '')
 
 # Create your views here.
 def buy_premium(request):
-    """ A view to return the buy premium page """
+    """
+    A view to render the buy premium page. 
+    Only works if user is logged in 
+    and doesn't have premium already.
+    """
 
     if not request.user.is_authenticated:
         return redirect('/accounts/signup/')
@@ -29,7 +30,9 @@ def buy_premium(request):
 
 
 def charge(request):
-    """ Process stripe payment for premium membership """
+    """
+    Process stripe payment for premium membership
+    """
 
     current_user = request.user
 
@@ -55,7 +58,9 @@ def charge(request):
 
 
 def successMsg(request):
-    """ Stripe payment successful view. """
+    """
+    Render the Stripe payment successful view.
+    """
 
     if not request.user.is_authenticated:
         return redirect('/accounts/signup/')
