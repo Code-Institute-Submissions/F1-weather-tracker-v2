@@ -1,37 +1,72 @@
+/* --- profile page --- */
+
 .profile-container {
   width: 50%;
   padding: 20px;
   border: 2px solid $cYellow;
   border-radius: 10px;
 
-  .email-sub, 
-	.premium-sub {
+  .email-sub,
+  .premium-sub {
     margin-bottom: 6px;
     color: $cGray;
-		font-family: "Ubuntu", sans-serif;
-		font-size: 1.6rem;
-		font-weight: 700;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 1.6rem;
+    font-weight: 700;
   }
 
-	.email-user {
-		margin-bottom: 24px;
+  .email-user {
+    margin-bottom: 24px;
     color: $cGray;
-		font-family: "Ubuntu", sans-serif;
-		font-size: 1.6rem;
-		font-weight: 400;
-	}
+    font-family: "Ubuntu", sans-serif;
+    font-size: 1.6rem;
+    font-weight: 400;
+  }
 
-	.premium-true {
+  .premium-true {
     color: $cGreen;
-		font-family: "Ubuntu", sans-serif;
-		font-size: 1.8rem;
-		font-weight: 700;
-	}
+    font-family: "Ubuntu", sans-serif;
+    font-size: 1.8rem;
+    font-weight: 700;
+  }
 
-	.premium-false {
-		color: $cRed;
-		font-family: "Ubuntu", sans-serif;
-		font-size: 1.8rem;
-		font-weight: 700;
-	}
+  .premium-false {
+    color: $cRed;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 1.8rem;
+    font-weight: 700;
+  }
+}
+
+/* --- profile page media queries --- */
+
+@media (max-width: 653px) {
+  .profile-container {
+    width: 70%;
+  }
+}
+
+@media (max-width: 481px) {
+  .profile-container {
+    width: 85%;
+  }
+}
+
+@media (max-width: 331px) {
+  .profile-container {
+    width: 90%;
+
+    .email-sub,
+    .premium-sub {
+      font-size: 1.5rem;
+    }
+
+    .email-user {
+      font-size: 1.5rem;
+    }
+
+    .premium-true {
+      font-size: 1.7rem;
+    }
+  }
 }

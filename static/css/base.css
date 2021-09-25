@@ -1682,6 +1682,7 @@ body {
   font-weight: 700;
 }
 
+/* --- profile page --- */
 .profile-container {
   width: 50%;
   padding: 20px;
@@ -1718,5 +1719,34 @@ body {
   font-family: "Ubuntu", sans-serif;
   font-size: 1.8rem;
   font-weight: 700;
+}
+
+/* --- profile page media queries --- */
+@media (max-width: 653px) {
+  .profile-container {
+    width: 70%;
+  }
+}
+
+@media (max-width: 481px) {
+  .profile-container {
+    width: 85%;
+  }
+}
+
+@media (max-width: 331px) {
+  .profile-container {
+    width: 90%;
+  }
+  .profile-container .email-sub,
+  .profile-container .premium-sub {
+    font-size: 1.5rem;
+  }
+  .profile-container .email-user {
+    font-size: 1.5rem;
+  }
+  .profile-container .premium-true {
+    font-size: 1.7rem;
+  }
 }
 /*# sourceMappingURL=base.css.map */
