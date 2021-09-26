@@ -1,12 +1,12 @@
 # F1 weather tracker v2
 
-View live version of the website [here](placeholder).
+View live version of the website [here](https://f1-weather-v2.herokuapp.com/).
 
 Milestone Project 4: Full Stack Frameworks with Django – [Code Institute](https://codeinstitute.net/)
 
 This website was made as my fourth and final milestone project for the Code Institute course. The website was created for Formula 1 fans like myself, to provide them with accurate weather data of event locations. The project requirements were to create a full-stack website with a relational database using HTML, CSS, JavaScript, Python and Django. Additional requirements were to set up authentication, and provide paid access to the site's data and/or other activities using Stripe payments.
 
-![Website example](placeholder)
+![Website example](docs/etc/website-example.png)
 
 ---
 
