@@ -136,15 +136,72 @@ To keep the website looking uniform I will do my best to make sure that all rela
 
 #### General features
 
-placeholder
+**Header**:
+
+- Will always be visible at the top of every page.
+- Has clickable text/logo in the center that returns the user to the homepage.
+- On the left side it has a hamburger menu icon clicking it opens the side navigation menu.
+
+**Side navigation menu**:
+
+- Will be visible at the left of every page after clicking the hamburger menu icon.
+- Depending on whether or not a user is logged in it has internal links to the home page, calendar, profile, premium, login, or logout pages.
+
+**Footer**:
+
+- Will always be visible at the bottom of every page.
+- Has an external link to the weather API provider.
 
 #### Page specific features
 
-placeholder
+**Homepage**:
+
+- Has a div with a welcome message and a button with an internal link to the calendar page.
+- Has a div telling the visitor to register and mentions buying premium membership to access additional weather data. This div also has a button with an internal link to the register page.
+
+**Calendar page**:
+
+- Has cards for each of the (remaining) Formula 1 calendar events. Each card shows the event date and location. Clicking on active cards takes you to the single event page.
+
+**Single event page**:
+
+- Has a wide div that displays the country flag for the selected event and the track name.
+- Has two cards. One card has an internal link to the hourly forecast page, and the other card has an internal link to the daily forecast page.
+
+**Hourly forecast page**:
+
+- The data on this page is only accessible for users with a premium membership.
+- Has a wide div that displays the country flag for the selected event and the track name.
+- Has a wide div that displays the local time of the event location.
+- Has a div with the event schedule which included all the local starting times for each session.
+- Has twenty-four cards with weather data for the selected event, one card for each hour of the day.
+
+**Daily forecast page**:
+
+- Has a wide div that displays the country flag for the selected event and the track name.
+- Has a wide div that displays the local time of the event location.
+- Has a div with the event schedule which included all the local starting times for each session.
+- Has five cards with weather data for the selected event, one card for each of the next five days.
+
+**Premium page**:
+
+- This page is only accessible for users who don't have a premium membership yet.
+- Shows the logged in user their email address.
+- Has an element for executing a Stripe payment to purchase premium membership.
+
+**Profile page**:
+
+- This page is only accessible for logged in users.
+- Shows the logged in user their email address.
+- Shows the logged in user their premium membership status.
 
 ### Future features
 
-placeholder
+- Adding more functionality to the user profile page, such as email and password change.
+
+- Add a function to display the actual local time of a selected event.
+
+- Add actual API weather data to the database each hour for each calendar event. This whole project has been an absolute nightmare, I didn't even have time to try to implement this. But in hindsight it would've been a waste of time anyway, since I'll take this project offline as soon as I get my grade. If I ever decide to actually build this it will be with NodeJS.
 
 **_[Back to top](#contents)_**
 
