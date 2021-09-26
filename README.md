@@ -120,7 +120,7 @@ The main colours will be dark gray and yellow again, just as with my milestone t
 
 #### Typography
 
-To be determined.
+In total, I've used three different font families from the Google Fonts library. The font Ubuntu was used for regular things like the header and footer, and additionally for most buttons as well. The font Titillium+Web is similar to the one used on the official Formula 1 website and was used for most of the main content on the website. The font Inter was used for displaying the weather data.
 
 #### Uniformity
 
