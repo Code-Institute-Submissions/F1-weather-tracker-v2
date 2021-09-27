@@ -102,7 +102,7 @@ Everything is working and displaying as intended. [(screenshot)](testing-img/bra
 
 ## Mobile responsiveness
 
-placeholder
+I've applied completely custom media queries throughout the website to achieve mobile responsiveness. To test the website for mobile responsiveness I've been using the Google Chrome devtools throughout the coding of the media queries. I manually used the sliders to adjust for different screen sizes, and I've also used all the pre-configured screen sizes in the devtools to test if things looked okay, both in vertical and horizontal directions. Another thing I usually do is use [responsive design checker](https://responsivedesignchecker.com/) and [ami responsive design](http://ami.responsivedesign.is/) for some additional mobile responsiveness testing throughout the building of the website, but for some reason I couldn't display the website on there. My guess is that the HTTPS protocol prevents this, while previous projects used the HTTP protocol which has less security built in.
 
 **_[Back to top](#contents)_**
 
