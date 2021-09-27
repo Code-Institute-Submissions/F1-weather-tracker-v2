@@ -261,7 +261,7 @@ For this project we were required to create a relational database. In total I se
 
 ## Testing
 
-placeholder
+A separate file with testing information can be found [here](docs/testing/TESTING.md).
 
 **_[Back to top](#contents)_**
 
