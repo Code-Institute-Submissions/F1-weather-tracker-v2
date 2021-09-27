@@ -110,7 +110,25 @@ I've applied completely custom media queries throughout the website to achieve m
 
 ## Code validators
 
-placeholder
+### W3C - Markup Validation Service
+
+I've put the HTML code through the [W3C markup validator](https://validator.w3.org/), and I only got Django syntax related errors that should be ignored. There were also two errors or so in the stripe payment element code, but I'm not going to mess around with that and risk breaking the functionality.
+
+### W3C - CSS Validation Service
+
+I've put my base.css file through the [W3C CSS validator](https://jigsaw.w3.org/css-validator/) and it passed without errors on the second try, after removing some unnecessary text-justify styling.
+
+### JSHint - JavaScript code quality checker
+
+I've put my main.js file through the [JSHint validator](https://jshint.com/) and it gave no warnings or errors.
+
+### Python checker - Python code syntax checker
+
+I've checked my Python code syntax on the [extendsclass website](https://extendsclass.com/python-tester.html), and I got no errors at all.
+
+### PEP8 online - Python code style checker
+
+I've checked my Python code style to fit the PEP8 guidelines with the Visual Studio Code built in flake8 checker, and on the [PEP8online website](http://pep8online.com/). I'm getting some errors/warning about standard Django imports being unused like `from django.contrib.auth import get_user_model`, but I'm leaving them in because it's probably there for a reason. I'm also getting some warnings for trailing whitespace in multi-line comments which can be ignored, it's just a preference thing. In settings.py there are some 'line too long' errors in the `AUTH_PASSWORD_VALIDATORS` array, which can't be fixed because pushing them down the line is still too long and you can't break them up in smaller lines. In premium/views.py there is an error about unused variable 'charge' but that one is necessary for Stripe payments functionality.
 
 **_[Back to top](#contents)_**
 
