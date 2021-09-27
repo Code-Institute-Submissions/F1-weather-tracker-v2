@@ -221,23 +221,39 @@ For this project we were required to create a relational database. In total I se
 
 ### Languages
 
-placeholder
+- [HTML5](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5) - for the structuring of the website.
+
+- [CSS3](https://developer.mozilla.org/en-US/docs/Archive/CSS3) - for the styling and responsiveness of the website.
+
+- [SASS](https://sass-lang.com/) - a scripting language that extends CSS.
+
+- [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript) - for the (interactive) functionality of the website.
+
+- [Python](https://www.python.org/) - for the backend functionality of the website.
 
 ### Frameworks
 
-placeholder
+- [Django](https://www.djangoproject.com/)
 
 ### Libraries
 
-placeholder
+- [Google Fonts](https://fonts.google.com/) - for the Ubuntu, Titillium+Web, and Inter font-families.
 
 ### Databases
 
-placeholder
+- [PostgreSQL](https://www.postgresql.org/)
 
 ### Software
 
-placeholder
+- [Balsamiq](https://balsamiq.com/) - for creating the wireframes.
+
+- [Visual Studio Code (desktop version)](https://code.visualstudio.com/) - for coding and creating the project.
+
+- [Git (BASH)](https://gitforwindows.org/) - for version control in the VSCode terminal.
+
+- [Google Chrome](https://www.google.com/chrome/) - for testing the website with their devtools.
+
+- [pgAdmin4](https://www.pgadmin.org/download/pgadmin-4-windows/) - for managing the PostgreSQL database.
 
 **_[Back to top](#contents)_**
 
