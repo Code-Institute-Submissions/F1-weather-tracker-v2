@@ -110,7 +110,7 @@ body {
 #base-body {
   width: 100%;
   min-height: 100vh;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
 }
 
 /* --- header --- */
@@ -123,8 +123,8 @@ body {
       -ms-flex-direction: row;
           flex-direction: row;
   width: 100%;
-  background-color: #211F22;
-  color: #FFC929;
+  background-color: #211f22;
+  color: #ffc929;
   min-height: 50px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -143,7 +143,7 @@ body {
 }
 
 #base-header h1 {
-  color: #FFC929;
+  color: #ffc929;
   font-family: "Ubuntu", sans-serif;
   font-size: 2.1rem;
   font-weight: 400;
@@ -175,7 +175,7 @@ body {
   display: block;
   width: 100%;
   height: 5px;
-  background-color: #FF4040;
+  background-color: #ff4040;
   margin: 6px 0px;
   -webkit-transition: 0.6s;
   transition: 0.6s;
@@ -204,7 +204,7 @@ body {
   min-height: 100vh;
   display: block;
   z-index: 2;
-  background-color: #FFC929;
+  background-color: #ffc929;
   padding-top: 60px;
   -webkit-transition: 0.4s;
   transition: 0.4s;
@@ -221,17 +221,17 @@ body {
   margin: 0 auto 16px;
   text-align: center;
   padding: 12px 16px;
-  background-color: #211F22;
+  background-color: #211f22;
   font-family: "Ubuntu", sans-serif;
   font-size: 2.1rem;
   font-weight: 400;
-  color: #FFC929;
+  color: #ffc929;
   text-decoration: none;
 }
 
 .mobile-nav a:hover {
-  background-color: #FF4040;
-  color: #211F22;
+  background-color: #ff4040;
+  color: #211f22;
 }
 
 /* --- header media queries */
@@ -325,9 +325,6 @@ body {
       -ms-flex-positive: 1;
           flex-grow: 1;
   padding: 12px;
-  /*background-color: darken($cWhite, 10%); remove later */
-  border-left: 1px dashed red;
-  border-right: 1px dashed red;
 }
 
 /* --- media queries --- */
@@ -379,11 +376,17 @@ body {
   }
 }
 
+@media (max-width: 331px) {
+  #content-container {
+    padding: 6px;
+  }
+}
+
 /* --- footer --- */
 #base-footer {
   width: 100%;
-  background-color: #211F22;
-  color: #FFC929;
+  background-color: #211f22;
+  color: #ffc929;
   font-size: 1.8rem;
   min-height: 50px;
   -webkit-box-pack: center;
@@ -392,7 +395,7 @@ body {
 }
 
 #base-footer p {
-  color: #FFC929;
+  color: #ffc929;
   font-family: "Ubuntu", sans-serif;
   font-size: 1.8rem;
   font-weight: 300;
@@ -401,7 +404,7 @@ body {
 #base-footer p a {
   font-size: 1.6rem;
   font-style: italic;
-  color: #FF4040;
+  color: #ff4040;
   text-decoration: none;
 }
 
@@ -450,7 +453,7 @@ body {
 }
 
 .auth-a {
-  color: #FF4040;
+  color: #ff4040;
   text-decoration: none;
   font-weight: 300;
 }
@@ -459,33 +462,35 @@ body {
   font-weight: bold;
 }
 
-.auth-p, .auth-a {
+.auth-p,
+.auth-a {
   font-size: 1.6rem;
+  text-align: center;
 }
 
 .auth-form {
   width: 50%;
   padding: 20px;
   margin-top: 16px;
-  border: 2px solid #211F22;
+  border: 2px solid #211f22;
   border-radius: 10px;
 }
 
 .auth-p-sub {
   margin: 16px 0px;
+  text-align: center;
 }
 
 /* Allauth form formatting */
 .auth-form p {
   margin-bottom: 12px;
-  color: #FFC929;
-  /* text-secondary */
+  color: #ffc929;
   font-size: 1.8rem;
   font-weight: 800;
 }
 
 .auth-form input {
-  border: 3px solid #211F22;
+  border: 3px solid #211f22;
   border-radius: 0px;
   padding: 5px;
   width: 100%;
@@ -497,55 +502,57 @@ body {
 }
 
 .auth-form input::-webkit-input-placeholder {
-  color: #FFC929;
+  color: #ffc929;
 }
 
 .auth-form input:-ms-input-placeholder {
-  color: #FFC929;
+  color: #ffc929;
 }
 
 .auth-form input::-ms-input-placeholder {
-  color: #FFC929;
+  color: #ffc929;
 }
 
 .auth-form input::placeholder {
-  color: #FFC929;
+  color: #ffc929;
 }
 
 .auth-form button,
 .auth-form input[type="submit"] {
-  /* btn */
   display: inline-block;
   margin-left: 12px;
-  font-weight: 600;
-  text-transform: lowercase;
-  color: #FFC929;
   text-align: center;
   vertical-align: middle;
   -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  background-color: #211F22;
-  border: 1px solid #211F22;
-  padding: 0.5rem 1.5rem;
-  font-size: 1.2rem;
-  line-height: 1.5;
-  border-radius: 10px;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
   cursor: pointer;
+  background-color: #211f22;
+  color: #ffc929;
+  font-family: "Ubuntu", sans-serif;
+  padding: 8px;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  font-weight: 500;
 }
 
 .auth-form button:hover,
 .auth-form input[type="submit"]:hover {
-  color: #FFC929;
-  border-color: #211F22;
   -webkit-transform: scale(1.05);
           transform: scale(1.05);
 }
 
+.password-reset-btn {
+  width: 60px !important;
+  font-size: 1.4rem;
+}
+
 .auth-form a {
-  color: #FF4040;
-  /* text-info */
+  color: #ff4040;
   text-decoration: none;
   font-size: 1.4rem;
   font-weight: 300;
@@ -555,8 +562,71 @@ body {
   font-weight: bold;
 }
 
+/* --- allauth media queries --- */
+@media (max-width: 1061px) {
+  #already-premium-page-title {
+    font-size: 2.4rem;
+    text-align: center;
+  }
+}
+
+@media (max-width: 831px) {
+  #already-premium-page-title {
+    font-size: 2.2rem;
+  }
+}
+
+@media (max-width: 769px) {
+  .auth-form {
+    width: 70%;
+    margin-top: 8px;
+  }
+  .auth-h1 {
+    margin: 6px 0px 12px 0px;
+    font-size: 2.8rem;
+  }
+  .auth-form button,
+  .auth-form input[type="submit"] {
+    padding: 8px;
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 551px) {
+  .auth-form {
+    width: 80%;
+  }
+  .auth-form button,
+  .auth-form input[type="submit"] {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 429px) {
+  #already-premium-page-title {
+    font-size: 1.9rem;
+  }
+}
+
+@media (max-width: 376px) {
+  .auth-h1 {
+    margin: 3px 0px 6px 0px;
+    font-size: 2.4rem;
+  }
+  .auth-form {
+    width: 95%;
+  }
+}
+
+@media (max-width: 376px) {
+  .auth-form {
+    width: 98%;
+  }
+}
+
+/* --- home page --- */
 .homepage-title {
-  color: #211F22;
+  color: #211f22;
   font-family: "Titillium+Web", sans-serif;
   font-size: 3rem;
   font-weight: 800;
@@ -574,11 +644,11 @@ body {
   border-radius: 10px;
   padding: 24px 48px;
   margin: 16px;
-  background: #FF4040;
+  background: #ff4040;
 }
 
 .calendar-ad p {
-  color: #211F22;
+  color: #211f22;
   font-family: "Titillium+Web", sans-serif;
   font-size: 2.2rem;
   font-weight: 700;
@@ -588,8 +658,8 @@ body {
 }
 
 .calendar-ad a {
-  background-color: #211F22;
-  color: #FF4040;
+  background-color: #211f22;
+  color: #ff4040;
   font-family: "Ubuntu", sans-serif;
   padding: 10px 8px;
   border-radius: 5px;
@@ -609,11 +679,11 @@ body {
   border-radius: 10px;
   padding: 24px 48px;
   margin: 16px;
-  background: #FFC929;
+  background: #ffc929;
 }
 
 .register-ad p {
-  color: #211F22;
+  color: #211f22;
   font-family: "Titillium+Web", sans-serif;
   font-size: 2.2rem;
   font-weight: 700;
@@ -623,8 +693,8 @@ body {
 }
 
 .register-ad a {
-  background-color: #211F22;
-  color: #FFC929;
+  background-color: #211f22;
+  color: #ffc929;
   font-family: "Ubuntu", sans-serif;
   padding: 10px 8px;
   border-radius: 5px;
@@ -745,8 +815,9 @@ body {
   }
 }
 
+/* --- events page --- */
 .page-title {
-  color: #211F22;
+  color: #211f22;
   font-family: "Titillium+Web", sans-serif;
   font-size: 3rem;
   font-weight: 800;
@@ -820,7 +891,6 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background: red;
   padding: 0;
 }
 
@@ -840,7 +910,7 @@ body {
 
 .circuit-info-container p {
   overflow-wrap: break-word;
-  color: #211F22;
+  color: #211f22;
   font-family: "Titillium+Web", sans-serif;
   font-size: 1.6rem;
   font-weight: 600;
@@ -858,13 +928,62 @@ body {
 }
 
 .past-event {
-  color: #FF4040 !important;
+  color: #ff4040 !important;
 }
 
 .future-event {
-  color: #A9DC76 !important;
+  color: #a9dc76 !important;
 }
 
+/* --- events page media queries --- */
+@media (max-width: 1145px) {
+  .event-container {
+    width: 150px;
+    height: 170px;
+  }
+}
+
+@media (max-width: 883px) {
+  .event-container {
+    width: 140px;
+    height: 150px;
+    margin: 12px;
+  }
+  .circuit-info-container p {
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 621px) {
+  .event-container {
+    width: 130px;
+    height: 140px;
+    margin: 8px;
+  }
+  .circuit-info-container p {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 331px) {
+  .event-container {
+    width: 120px;
+    height: 130px;
+  }
+  .circuit-info-container p {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 309px) {
+  .event-container {
+    width: 110px;
+    height: 120px;
+    margin: 6px;
+  }
+}
+
+/* --- single event page --- */
 .flag-trackname-container {
   margin-top: 16px;
   height: 40px;
@@ -903,7 +1022,7 @@ body {
 }
 
 .flag-trackname-container .track-name-container h3 {
-  color: #211F22;
+  color: #211f22;
   font-family: "Titillium+Web", sans-serif;
   font-size: 2rem;
   font-weight: 700;
@@ -924,7 +1043,7 @@ body {
   width: 160px;
   background: #363237;
   text-align: center;
-  color: #FFC929;
+  color: #ffc929;
   font-family: "Titillium+Web", sans-serif;
   font-size: 2.6rem;
   font-weight: 600;
@@ -945,13 +1064,102 @@ body {
           transform: scale(1.02);
 }
 
+/* --- single event page media queries --- */
+@media (max-width: 1051px) {
+  .flag-trackname-container {
+    width: 74%;
+  }
+}
+
+@media (max-width: 837px) {
+  .flag-trackname-container {
+    width: 82%;
+  }
+  .forecast-options-container .forecast-option {
+    height: 140px;
+    width: 140px;
+    font-size: 2.2rem;
+  }
+}
+
+@media (max-width: 599px) {
+  .flag-trackname-container {
+    width: 90%;
+  }
+  .flag-trackname-container .track-name-container h3 {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 515px) {
+  .flag-trackname-container {
+    width: 100%;
+  }
+  .forecast-options-container .forecast-option {
+    height: 126px;
+    width: 126px;
+    font-size: 2.1rem;
+    margin: 16px;
+  }
+}
+
+@media (max-width: 410px) {
+  .flag-trackname-container {
+    height: 34px;
+  }
+  .flag-trackname-container .track-name-container h3 {
+    font-size: 1.6rem;
+  }
+  .forecast-options-container .forecast-option {
+    height: 120px;
+    width: 120px;
+    font-size: 2rem;
+    margin: 16px;
+  }
+  .forecast-options-container .forecast-option span {
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 359px) {
+  .flag-trackname-container .track-name-container h3 {
+    font-size: 1.4rem;
+  }
+  .forecast-options-container .forecast-option {
+    height: 120px;
+    width: 120px;
+    font-size: 1.6rem;
+    margin: 10px;
+    padding: 8px;
+  }
+  .forecast-options-container .forecast-option span {
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 319px) {
+  .flag-trackname-container .track-name-container h3 {
+    font-size: 1.2rem;
+  }
+  .forecast-options-container .forecast-option {
+    height: 110px;
+    width: 110px;
+    font-size: 1.5rem;
+    margin: 6px;
+  }
+  .forecast-options-container .forecast-option span {
+    font-size: 1.2rem;
+  }
+}
+
+/* --- daily forecast page --- */
 .local-time-container {
   margin-top: 16px;
   height: 32px;
   width: 40%;
   background: #e9e9e9cc;
   border-radius: 10px;
-  color: #211F22;
+  color: #211f22;
   font-family: "Titillium+Web", sans-serif;
   font-size: 2rem;
   font-weight: 700;
@@ -967,7 +1175,7 @@ body {
 .schedule-container {
   margin-top: 24px;
   width: 50%;
-  color: #211F22;
+  color: #211f22;
   font-family: "Inter", sans-serif;
   border-radius: 10px;
   overflow: hidden;
@@ -980,7 +1188,7 @@ body {
   font-weight: 700;
   background: #bebebe;
   padding: 8px;
-  border-bottom: 1px solid #211F22;
+  border-bottom: 1px solid #211f22;
 }
 
 .schedule-container .schedule-title span {
@@ -1022,34 +1230,176 @@ body {
 .daily-weather-cards-container .daily-weather-card {
   margin: 16px 12px;
   min-width: 130px;
-  padding: 6px;
+  padding: 8px;
   font-family: "Inter", sans-serif;
   font-size: 1.4rem;
   font-weight: 600;
   border-radius: 10px;
-  background: #211F22;
+  background: #211f22;
 }
 
 .daily-weather-cards-container .daily-weather-card p {
-  margin: 4px;
+  margin: 6px;
 }
 
 .daily-weather-cards-container .daily-weather-card .daily-date {
-  color: #FFC929;
+  color: #ffc929;
 }
 
 .daily-weather-cards-container .daily-weather-card .daily-mintemp {
-  color: #A9DC76;
+  color: #a9dc76;
 }
 
 .daily-weather-cards-container .daily-weather-card .daily-maxtemp {
-  color: #FF4040;
+  color: #ff4040;
 }
 
-.daily-weather-cards-container .daily-weather-card .daily-precip, .daily-weather-cards-container .daily-weather-card .daily-rain {
-  color: #509CFF;
+.daily-weather-cards-container .daily-weather-card .daily-precip,
+.daily-weather-cards-container .daily-weather-card .daily-rain {
+  color: #509cff;
 }
 
+/* --- daily forecast page media queries --- */
+@media (max-width: 995px) {
+  .schedule-container {
+    width: 60%;
+  }
+  .schedule-container .schedule-title {
+    font-size: 1.7rem;
+  }
+  .schedule-container .schedule-title span {
+    font-size: 1.5rem;
+  }
+  .schedule-container .schedule-session {
+    font-size: 1.7rem;
+  }
+  .schedule-container .schedule-session span {
+    font-size: 1.9rem;
+  }
+}
+
+@media (max-width: 881px) {
+  .local-time-container {
+    width: 60%;
+    font-size: 1.9rem;
+  }
+  .local-time-container span {
+    font-size: 1.7rem;
+  }
+  .daily-weather-cards-container {
+    margin-top: 8px;
+  }
+  .daily-weather-cards-container .daily-weather-card {
+    margin: 14px 10px;
+    min-width: 120px;
+    padding: 6px;
+    font-size: 1.2rem;
+  }
+  .daily-weather-cards-container .daily-weather-card p {
+    margin: 5px;
+  }
+}
+
+@media (max-width: 591px) {
+  .schedule-container {
+    width: 70%;
+  }
+  .schedule-container .schedule-title {
+    font-size: 1.5rem;
+  }
+  .schedule-container .schedule-title span {
+    font-size: 1.3rem;
+  }
+  .schedule-container .schedule-session {
+    font-size: 1.5rem;
+  }
+  .schedule-container .schedule-session span {
+    font-size: 1.7rem;
+  }
+  .daily-weather-cards-container .daily-weather-card {
+    margin: 8px;
+    min-width: 110px;
+    font-size: 1.1rem;
+  }
+  .daily-weather-cards-container .daily-weather-card p {
+    margin: 3px;
+  }
+}
+
+@media (max-width: 477px) {
+  .local-time-container {
+    width: 70%;
+    font-size: 1.8rem;
+  }
+  .local-time-container span {
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 425px) {
+  .schedule-container {
+    width: 80%;
+    margin-top: 18px;
+  }
+}
+
+@media (max-width: 391px) {
+  .schedule-container .schedule-title {
+    font-size: 1.3rem;
+  }
+  .schedule-container .schedule-title span {
+    font-size: 1.1rem;
+  }
+  .schedule-container .schedule-session {
+    padding: 6px;
+    font-size: 1.3rem;
+  }
+  .schedule-container .schedule-session span {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 341px) {
+  .schedule-container {
+    width: 90%;
+  }
+  .schedule-container .schedule-title {
+    font-size: 1.2rem;
+  }
+  .schedule-container .schedule-title span {
+    font-size: 1rem;
+  }
+  .schedule-container .schedule-session {
+    padding: 4px;
+    font-size: 1.1rem;
+  }
+  .schedule-container .schedule-session span {
+    font-size: 1.3rem;
+  }
+  .daily-weather-cards-container .daily-weather-card {
+    margin: 4px;
+    min-width: 90px;
+    padding: 4px;
+    font-size: 0.9rem;
+  }
+  .daily-weather-cards-container .daily-weather-card p {
+    margin: 2px;
+  }
+}
+
+@media (max-width: 311px) {
+  .local-time-container {
+    height: 28px;
+    width: 76%;
+    font-size: 1.4rem;
+  }
+  .local-time-container span {
+    margin-left: 4px;
+    font-size: 1.2rem;
+  }
+}
+
+/* --- hourly forecast page --- */
 .hourly-weather-cards-container {
   margin-top: 24px;
   -ms-flex-wrap: wrap;
@@ -1057,40 +1407,78 @@ body {
 }
 
 .hourly-weather-cards-container .hourly-weather-card {
-  margin: 12px 6px;
-  min-width: 50px;
-  padding: 4px;
+  margin: 10px 6px;
+  min-width: 60px;
+  padding: 4px 8px;
   font-family: "Inter", sans-serif;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   font-weight: 500;
   border-radius: 10px;
-  background: #211F22;
+  background: #211f22;
 }
 
 .hourly-weather-cards-container .hourly-weather-card p {
-  margin: 2px;
+  margin: 1px;
 }
 
 .hourly-weather-cards-container .hourly-weather-card .hourly-date {
-  color: #FFC929;
+  color: #ffc929;
 }
 
 .hourly-weather-cards-container .hourly-weather-card .hourly-time {
-  color: #FFC929;
+  color: #ffc929;
 }
 
 .hourly-weather-cards-container .hourly-weather-card .hourly-temp {
-  color: #FF4040;
+  color: #ff4040;
 }
 
-.hourly-weather-cards-container .hourly-weather-card .hourly-precip, .hourly-weather-cards-container .hourly-weather-card .hourly-rain {
-  color: #509CFF;
+.hourly-weather-cards-container .hourly-weather-card .hourly-precip,
+.hourly-weather-cards-container .hourly-weather-card .hourly-rain {
+  color: #509cff;
+}
+
+/* --- hourly forecast page media queries --- */
+@media (max-width: 778px) {
+  .hourly-weather-cards-container {
+    margin-top: 16px;
+  }
+  .hourly-weather-cards-container .hourly-weather-card {
+    margin: 8px 5px;
+    min-width: 56px;
+    padding: 4px 8px;
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 441px) {
+  .hourly-weather-cards-container {
+    margin-top: 12px;
+  }
+  .hourly-weather-cards-container .hourly-weather-card {
+    margin: 5px 4px;
+    min-width: 50px;
+    padding: 4px 6px;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 341px) {
+  .hourly-weather-cards-container .hourly-weather-card {
+    margin: 4px 3px;
+    min-width: 46px;
+    padding: 4px;
+    font-size: 0.9rem;
+  }
+  .hourly-weather-cards-container .hourly-weather-card p {
+    margin: 0.5px;
+  }
 }
 
 /* buy premium page */
 .premium-p {
   margin: 12px 16px 24px 16px;
-  color: #211F22;
+  color: #211f22;
   font-family: "Titillium+Web", sans-serif;
   font-size: 1.6rem;
   font-weight: 500;
@@ -1098,7 +1486,7 @@ body {
 }
 
 .premium-p span {
-  color: #FF4040;
+  color: #ff4040;
   font-style: italic;
 }
 
@@ -1116,7 +1504,7 @@ body {
 
 .stripe-element-container {
   padding: 16px;
-  border: 3px solid #A9DC76;
+  border: 3px solid #a9dc76;
   border-radius: 10px;
 }
 
@@ -1130,7 +1518,7 @@ body {
 
 .stripe-element-container #card-errors {
   padding: 8px;
-  color: #FF4040;
+  color: #ff4040;
 }
 
 .stripe-element-container .submit-payment-btn {
@@ -1138,8 +1526,8 @@ body {
   padding: 6px 12px;
   border: none;
   border-radius: 5px;
-  background: #211F22;
-  color: #FFC929;
+  background: #211f22;
+  color: #ffc929;
   font-family: "Titillium+Web", sans-serif;
   font-size: 1.4rem;
   font-weight: 500;
@@ -1148,11 +1536,11 @@ body {
 .stripe-element-container .submit-payment-btn:hover {
   -webkit-transform: scale(1.05);
           transform: scale(1.05);
-  border: 2px solid #FFC929;
+  border: 2px solid #ffc929;
 }
 
 .back-to-homepage {
-  color: #FF4040;
+  color: #ff4040;
   text-decoration: none;
   font-size: 1.8rem;
   font-weight: 400;
@@ -1181,12 +1569,12 @@ body {
 }
 
 .StripeElement--focus {
-  -webkit-box-shadow: 0 1px 3px 0 #A9DC76;
-          box-shadow: 0 1px 3px 0 #A9DC76;
+  -webkit-box-shadow: 0 1px 3px 0 #a9dc76;
+          box-shadow: 0 1px 3px 0 #a9dc76;
 }
 
 .StripeElement--invalid {
-  border-color: #FF4040;
+  border-color: #ff4040;
 }
 
 .StripeElement--webkit-autofill {
@@ -1197,13 +1585,79 @@ body {
   display: none;
 }
 
+/* --- premium pages media queries --- */
+@media (max-width: 631px) {
+  .page-title {
+    font-size: 2.4rem;
+  }
+  .premium-p {
+    font-size: 1.4rem;
+  }
+  .form-options-container label {
+    font-size: 1.3rem;
+  }
+  .form-options-container select {
+    padding: 5px;
+    font-size: 1.2rem;
+  }
+  .stripe-element-container {
+    padding: 12px;
+  }
+  .StripeElement {
+    height: 38px;
+    width: 330px;
+    padding: 6px;
+  }
+}
+
+@media (max-width: 410px) {
+  .page-title {
+    font-size: 2.1rem;
+  }
+  .premium-p {
+    font-size: 1.3rem;
+    margin: 12px;
+  }
+  .form-options-container label {
+    font-size: 1.2rem;
+    margin-bottom: 8px;
+  }
+  .form-options-container select {
+    padding: 4px;
+    font-size: 1.1rem;
+  }
+  .stripe-element-container {
+    padding: 10px;
+  }
+  .StripeElement {
+    width: 280px;
+  }
+}
+
+@media (max-width: 341px) {
+  .page-title {
+    font-size: 1.9rem;
+  }
+  .premium-p {
+    font-size: 1.2rem;
+    margin: 10px;
+  }
+  .stripe-element-container {
+    padding: 8px;
+  }
+  .StripeElement {
+    width: 240px;
+  }
+}
+
+/* --- error pages --- */
 .error-container {
   margin-top: 24px;
 }
 
 .error-container .error-title {
   margin-bottom: 16px;
-  color: #211F22;
+  color: #211f22;
   font-family: "Titillium+Web", sans-serif;
   font-size: 2.6rem;
   font-weight: 700;
@@ -1211,7 +1665,7 @@ body {
 
 .error-container .error-p {
   margin-bottom: 16px;
-  color: #211F22;
+  color: #211f22;
   font-family: "Ubuntu", sans-serif;
   text-decoration: none;
   font-size: 1.6rem;
@@ -1219,7 +1673,7 @@ body {
 }
 
 .error-container .error-a {
-  color: #FF4040;
+  color: #ff4040;
   font-family: "Ubuntu", sans-serif;
   text-decoration: none;
   font-size: 1.4rem;
@@ -1230,17 +1684,18 @@ body {
   font-weight: 700;
 }
 
+/* --- profile page --- */
 .profile-container {
   width: 50%;
   padding: 20px;
-  border: 2px solid #FFC929;
+  border: 2px solid #ffc929;
   border-radius: 10px;
 }
 
 .profile-container .email-sub,
 .profile-container .premium-sub {
   margin-bottom: 6px;
-  color: #211F22;
+  color: #211f22;
   font-family: "Ubuntu", sans-serif;
   font-size: 1.6rem;
   font-weight: 700;
@@ -1248,23 +1703,52 @@ body {
 
 .profile-container .email-user {
   margin-bottom: 24px;
-  color: #211F22;
+  color: #211f22;
   font-family: "Ubuntu", sans-serif;
   font-size: 1.6rem;
   font-weight: 400;
 }
 
 .profile-container .premium-true {
-  color: #A9DC76;
+  color: #a9dc76;
   font-family: "Ubuntu", sans-serif;
   font-size: 1.8rem;
   font-weight: 700;
 }
 
 .profile-container .premium-false {
-  color: #FF4040;
+  color: #ff4040;
   font-family: "Ubuntu", sans-serif;
   font-size: 1.8rem;
   font-weight: 700;
+}
+
+/* --- profile page media queries --- */
+@media (max-width: 653px) {
+  .profile-container {
+    width: 70%;
+  }
+}
+
+@media (max-width: 481px) {
+  .profile-container {
+    width: 85%;
+  }
+}
+
+@media (max-width: 331px) {
+  .profile-container {
+    width: 90%;
+  }
+  .profile-container .email-sub,
+  .profile-container .premium-sub {
+    font-size: 1.5rem;
+  }
+  .profile-container .email-user {
+    font-size: 1.5rem;
+  }
+  .profile-container .premium-true {
+    font-size: 1.7rem;
+  }
 }
 /*# sourceMappingURL=base.css.map */
