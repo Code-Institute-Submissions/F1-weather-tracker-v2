@@ -22,7 +22,8 @@ class Dailyweatherforecast(models.Model):
     date = models.CharField(max_length=16, blank=True, null=True)
     min_temp = models.IntegerField(blank=True, null=True)
     max_temp = models.IntegerField(blank=True, null=True)
-    precipitation = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
+    precipitation = models.DecimalField(max_digits=65535, decimal_places=65535,
+                                        blank=True, null=True)
     chance_of_rain = models.IntegerField(blank=True, null=True)
 
     class Meta:
@@ -37,7 +38,8 @@ class Hourlyweatherforecast(models.Model):
     date = models.CharField(max_length=16, blank=True, null=True)
     time = models.CharField(max_length=16, blank=True, null=True)
     temperature = models.IntegerField(blank=True, null=True)
-    precipitation = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
+    precipitation = models.DecimalField(max_digits=65535, decimal_places=65535,
+                                        blank=True, null=True)
     chance_of_rain = models.IntegerField(blank=True, null=True)
 
     class Meta:

@@ -7,8 +7,10 @@ class Event(models.Model):
     country = models.CharField(max_length=99, blank=True, null=True)
     city = models.CharField(max_length=99, blank=True, null=True)
     track_name = models.CharField(max_length=99, blank=True, null=True)
-    latitude = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
-    longitude = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
+    latitude = models.DecimalField(max_digits=65535, decimal_places=65535,
+                                   blank=True, null=True)
+    longitude = models.DecimalField(max_digits=65535, decimal_places=65535,
+                                    blank=True, null=True)
     active = models.BooleanField(blank=True, null=True)
     track_id = models.IntegerField()
 
