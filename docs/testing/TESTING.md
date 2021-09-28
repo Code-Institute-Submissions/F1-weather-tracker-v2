@@ -136,7 +136,133 @@ I've checked my Python code style to fit the PEP8 guidelines with the Visual Stu
 
 ## Test cases
 
-placeholder
+### General features
+
+1. Header:
+
+   1.1 The header will be visible at the top of the page.
+
+   1.2 The header should be sticky.
+
+   1.3 The header should have text/logo in the center.
+
+   1.4 The header should have a hamburger menu icon on the left that turns into a cross and opens the sidenav when clicked.
+
+---
+
+2. Sidenav:
+
+   2.1 The sidenav should have a cross in the top left when opened, clicking it will close the sidenav.
+
+   2.2 The sidenav should have internal links to the home page, calendar, profile, premium, login, or logout pages dependent on whether a user is logged in or not.
+
+---
+
+3. Footer:
+
+   3.1 The footer will be visible at the bottom of the page.
+
+   3.2 The footer should have an external link to the weather API provider.
+
+---
+
+### Homepage
+
+4. Homepage:
+
+   4.1 The homepage should have a div with a welcome message and a button with an internal link to the calendar page.
+
+   4.2 The homepage should have a div telling the visitor to register and mentions buying premium membership to access additional weather data. This div also has a button with an internal link to the register page.
+
+---
+
+### Calendar page
+
+5. Calendar page:
+
+   5.1 The calendar page should have cards for each of the (remaining) Formula 1 calendar events.
+
+   5.2 Each card shows the event date and location.
+
+   5.3 Clicking on active cards takes you to the single event page for the selected event.
+
+---
+
+### Single event page
+
+6. Single event page:
+
+    6.1 The single event page should have a wide div that displays the country flag for the selected event and the track name.
+
+    6.2 The single event page should have a card with an internal link to the hourly forecast page.
+
+    6.3 The single event page should have a card with an internal link to the daily forecast page.
+
+---
+
+### Hourly forecast page
+
+7. Hourly forecast page:
+
+    7.1 The hourly forecast page should only be accessible for users with a premium membership.
+
+    7.2 The hourly forecast page should have a wide div that displays the country flag for the selected event and the track name.
+
+    7.3 The hourly forecast page should have a wide div that could in the future display the local time of the event location.
+
+    7.4 The hourly forecast page should have a div with the event schedule which includes all the local starting times for each session.
+
+    7.5 The hourly forecast page should have twenty-four cards that could in the future display weather data for the selected event, one card for each hour of the day.
+
+---
+
+### Daily forecast page
+
+8. Daily forecast page:
+
+    8.1 The daily forecast page should have a wide div that displays the country flag for the selected event and the track name.
+
+    8.2 The daily forecast page should have a wide div that could in the future display the local time of the event location.
+
+    8.3 The daily forecast page should have a div with the event schedule which includes all the local starting times for each session.
+
+    8.4 The daily forecast page should have five cards that could in the future display weather data for the selected event, one card for each of the next five days.
+
+---
+
+### Premium page
+
+9. Premium page:
+
+    9.1 The premium page should only be accessible for logged in users who don't have a premium membership yet.
+
+    9.2 The premium page should display the logged in user their email address.
+
+    9.3 The premium page should have an element for executing a Stripe payment to purchase premium membership.
+
+---
+
+### Profile page
+
+10. Profile page:
+
+    10.1 The profile page should only be accessible for logged in users.
+
+    10.2 The profile page should display the logged in user their email address.
+
+    10.3 The profile page should display the logged in user their premium membership status.
+
+---
+
+### Error pages
+
+11. Error pages:
+
+    11.1 The error pages should display the error HTTP status code.
+
+    11.2 The error pages should have text saying "Back to home page", with an internal link to the home page.
+
+---
 
 **_[Back to top](#contents)_**
 
