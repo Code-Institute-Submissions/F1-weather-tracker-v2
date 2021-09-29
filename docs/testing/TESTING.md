@@ -270,7 +270,33 @@ I've checked my Python code style to fit the PEP8 guidelines with the Visual Stu
 
 ## Testing user stories
 
-placeholder
+- As a visitor, I would like to see the Formula 1 calendar, so that I know which events are happening soon.
+
+All screen sizes:
+
+1. On both the homepage and sidenav a button is visible that says "CALENDAR" which links to the calendar page.
+2. On the calendar page cards are visible with the (remaining) Formula 1 calendar events.
+
+---
+
+- As a premium member, I would like to access hourly weather data, so that I can better estimate under what weather conditions the race will be held.
+
+All screen sizes:
+
+1. On both the homepage and sidenav a button is visible that says "CALENDAR" which links to the calendar page.
+2. On the calendar page cards are visible with the (remaining) Formula 1 calendar events.
+3. After selecting a calendar event two cards are visible, one says "Hourly forcast (premium)". 
+4. After selecting the hourly forecast card the premium member can see cards with weather data for each hour for the selected event. (It's not actually live weather data though, since the weather API is not implemented yet, but the structure for it is there)
+
+---
+
+- As a site owner, I would like to have an authentication system, so that I can give customers premium membership status.
+
+All screen sizes:
+
+1. When the customer is registered and logged in there will be a button in the sidenav that says "PREMIUM" which links to the purchase premium page.
+2. On the purchase premium page the customer can buy premium membership through a Stripe payment element.
+3. After successful payment the customer is given the premium membership status, which can be seen in the profile page to which a link is in the sidenav.
 
 **_[Back to top](#contents)_**
 
