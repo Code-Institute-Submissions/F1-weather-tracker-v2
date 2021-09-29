@@ -306,11 +306,15 @@ All screen sizes:
 
 ### Solved bugs
 
-placeholder
+- Deploying my project to Heroku was not a problem, but the database wouldn't migrate. Apparently I had used PostgreSQL 9.6 and Heroku doesn't support that. Had to rebuild my entire database from scratch in PostgreSQL 13 a week before the project deadline... Would have been nice to know this beforehand.
+
+- After following the Code Institute tutorial on setting up an email server with SMTP and Gmail my entire allauth was broken. Registering and logging in was impossible, asked my mentor and apparently an email verification wasn't a requirement, so he told me to remove it or comment it out. I left it commented out inside the settings.py file, so you can see at least I tried.
 
 ### Known bugs
 
-placeholder
+- When you click the password reset link you get an HTTP 500 response error message. This is because there is no email server.
+
+- There is no real weather data because this project has been an absolute nightmare and I decided to just build the structure and start writing the documentation to meet the project deadline. All the base structure of the website is there, I might actually build it for real with a nodeJS backend one day. Anyway I never want to use Python or Django again, so I guess it would have been a waste of time anyway to hook up the API.
 
 **_[Back to top](#contents)_**
 
