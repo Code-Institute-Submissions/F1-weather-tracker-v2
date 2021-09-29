@@ -1,3 +1,4 @@
+### credits #3 (see README.md credits section) ###
 from django.shortcuts import render
 
 # Create your views here.

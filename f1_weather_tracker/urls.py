@@ -20,6 +20,7 @@ from django.contrib import admin
 from django.urls import path, include
 
 urlpatterns = [
+    ### credits #6 (see README.md credits section) ###
     path("favicon.ico", RedirectView.as_view(
         url=staticfiles_storage.url("favicon.ico")),),
     path('admin/', admin.site.urls),

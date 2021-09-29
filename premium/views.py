@@ -1,3 +1,4 @@
+### credits #5 (see README.md credits section) ###
 from django.shortcuts import render, redirect
 from django.urls import reverse
 

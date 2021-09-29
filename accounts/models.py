@@ -1,3 +1,4 @@
+### credits #1 (see README.md credits section) ###
 from django.contrib.auth.models import AbstractUser
 from django.db import models
 

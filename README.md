@@ -287,27 +287,55 @@ placeholder
 
 ## Credits
 
-placeholder
+All numbered references below correspond with a comment in either the HTML, CSS, SCSS, JavaScript or Python code.
 
 ### Code
 
-placeholder
+#1: Used [this tutorial](https://learndjango.com/tutorials/django-log-in-email-not-username) to create a log in model without username.
+
+#2: Referenced [this video](https://www.youtube.com/watch?v=t6RbanOhna4) to set up my connection to PostgreSQL.
+
+#3: Referenced [this tutorial](https://learndjango.com/tutorials/django-log-in-email-not-username) to create the error handling views.
+
+#4: Referenced [this video](https://www.youtube.com/watch?v=OFKBep95lb4) to create a slide-out sidenav with a hamburger menu icon.
+
+#5: Referenced [this video](https://www.youtube.com/watch?v=oZwyA9lUwRk) to build the stripe payments functionality.
+
+#6: Used [this tutorial](https://simpleit.rocks/python/django/django-favicon-adding/) to set up the favicon.
 
 ### Text
 
-placeholder
+None.
 
 ### Media
 
-placeholder
+#7: Country flag images taken from the [official Formula 1 website](https://www.formula1.com/).
+
+#8: Used [this photo](https://tilke.de/en/portfolio/sochi-autodrom/) of Sochi Autodrom.
+
+#9: Used [this photo](https://mapio.net/images-p/12655594.jpg) of Istanbul Park.
+
+#10: Used [this photo](https://www.racesport.nl/wp-content/uploads/2020/03/COTA-e1583853061975.jpg) of Circuit of The Americas.
+
+#11: Used [this photo](https://i.redd.it/5ef9fm5pwdt31.jpg) of Autódromo Hermanos Rodríguez.
+
+#12: Used [this photo](https://www.formula1.com/content/dam/fom-website/sutton/2017/Brazil/Sunday/dcc1712no236.jpg) of Autódromo José Carlos Pace.
+
+#13: Used [this image](https://tilke.de/wp-content/uploads/2021/03/21-03-10_Aerial_Cam02-FX.jpg) of Jeddah Street Circuit.
+
+#14: Used [this photo](https://img.bleacherreport.net/img/images/photos/003/840/531/hi-res-118e0b6c0d6637f1cc0ddb6cbb2781c5_crop_north.jpg?1575211406&w=3072&h=2048) of Yas Marina Circuit.
 
 ### Miscellaneous
 
-placeholder
+- Used https://coolors.co/ to create an image of my colour palette (see ['Surface'](#surface) section of the README).
+
+- Referenced [this tutorial](https://stackpython.medium.com/how-to-start-django-project-with-a-database-postgresql-aaa1d74659d8) to install and setup pgAdmin4 and PostgreSQL 9.6 which caused me a lot of trouble with deployment. Wish I knew beforehand what version of PostgreSQL to use, would have saved me a lot of time.
+
+- Used https://lucid.app/ to create an ER diagram image of my database schema.
 
 ### Acknowledgements
 
-placeholder
+- Thanks to my mentor, Simen Daehlin, for his quick responses on Slack and for giving me some hints whenever I ran into issues.
 
 **_[Back to top](#contents)_**
 

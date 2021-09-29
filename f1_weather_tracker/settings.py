@@ -130,6 +130,8 @@ WSGI_APPLICATION = 'f1_weather_tracker.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
+### credits #2 (see README.md credits section) ###
+
 DATABASE_CNAME = os.getenv('DATABASE_CNAME', '')
 DATABASE_USER = os.getenv('DATABASE_USER', '')
 DATABASE_PASSWORD = os.getenv('DATABASE_PASSWORD', '')
