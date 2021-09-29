@@ -271,15 +271,76 @@ A separate file with testing information can be found [here](docs/testing/TESTIN
 
 ### Set up database
 
-placeholder
+To deploy this project yourself you'll need to set up a local database, there are multiple options for this such as [PostgreSQL](https://www.postgresql.org/download/) and [MySQL](https://www.mysql.com/downloads/). Make sure to pick the right version for your operating system. With PostgreSQL, if you'd like to deploy on Heroku, make sure you install PostgreSQL version 12 or 13 because apparently they don't support older versions. After you installed the database service of your choice you'll have to re-create my database according to my [**database schema**](#database-schema).
 
 ### Hosting online
 
-placeholder
+This project was hosted on [Heroku](https://dashboard.heroku.com/) with the following steps:
+
+1. First of all you need to clone my repo and add it to your own Github account.
+2. Log into [Heroku](https://id.heroku.com/login).
+3. Select **new** and **create new app**.
+4. Choose a unique app name and select a region.
+5. Click **connect to github**.
+6. Enter your repo name and click search.
+7. Click **connect**.
+8. Now to attach a postgres database to the project click on the **resources** tab.
+9. Under Add-ons search for Heroku Postgres and select the **Hobby Dev - Free** option.
+10. Now scroll up and click on the **settings** tab.
+11. Click **reveal config vars**.
+12. Add the correct environment variables (you can find some of these by clicking the settings tab in your Heroku Postgres add-on and then click on view database credentials): 
+
+```
+DATABASE_CNAME = <your database name>
+DATABASE_HOST = <your host>
+DATABASE_PASSWORD = <your database password>
+DATABASE_PORT = <your database port>
+DATABASE_URL =  <your database URL>
+DATABASE_USER =  <your database user>
+SECRET_KEY = <your secret key>
+STRIPE_API_KEY = <your stripe API key>
+
+```
+
+13. Make sure to comment out the DEBUG variable in your local .env file if you have that, then run the command `py manage.py makemigrations`
+14. Then run the command `py manage.py migrate`
+15. Create a superuser, so you can access the django admin, run the command `py manage.py createsuperuser`
+16. Those are all the steps, I think. Honestly, I had to follow multiple YouTube tutorials to get things working. The initial deployment was a giant mess because I built my database with PostgreSQL 9.6 and apparently Heroku doesn't support that version. There is a possibility that I forgot to mention a step or two. Even if I correctly mentioned all the steps, people are using different operating systems and software versions, it's better for people to search for a recent tutorial for their specific situation. As long as they use the correct config vars they should be fine.
 
 ### Running locally
 
-placeholder
+Again, how to run this project locally depends on your operating system and software versions. I used a desktop version of Visual Studio Code and PostgreSQL 13 with pgAdmin4. These are roughly the steps I took:
+
+1. First of all, re-create my database according to my [**database schema**](#database-schema) with a database service of your choice (I suggest PostgreSQL 13).
+2. Download and install the appropriate versions of Python, Visual Studio Code, and GIT for your computer.
+3. Download the repo from my Github and extract it in a folder on your computer.
+4. Open this folder in Visual Studio Code.
+5. Set up a virtual environment with the command `python -m venv env`
+6. Activate this virtual environment with the command `source "<path_to_your_project_folder>/env/Scripts/activate"`
+7. In your terminal, make sure you are in the root directory and enter the following command: `pip3 install -r requirements.txt`
+8. Create a .env file in the f1_weather_tracker folder and put your local environment variables in there:
+
+```
+# environment variables
+DEBUG = True
+SECRET_KEY = <your secret key>
+STRIPE_API_KEY = <your stripe API key>
+
+# Local DB
+DATABASE_CNAME = <your local database name>
+DATABASE_USER = <your local database user>
+DATABASE_PASSWORD = <your local database password>
+DATABASE_HOST= '127.0.0.1'
+DATABASE_PORT = '5432'
+
+```
+
+9. Run the command `py manage.py makemigrations`
+10. Run the command `py manage.py migrate`
+11. Create a superuser, so you can access the django admin, run the command `py manage.py createsuperuser`
+12. Run the command `py manage.py runserver`
+13. You should be able to visit the website by entering http://127.0.0.1:5432/admin/ in your browser.
+14. Again, to the best of my knowledge I think these are all the steps, but I also might have forgotten one or two. And these steps are very specific to certain operating systems and software versions anyway.
 
 **_[Back to top](#contents)_**
 
@@ -295,7 +356,7 @@ All numbered references below correspond with a comment in either the HTML, CSS,
 
 #2: Referenced [this video](https://www.youtube.com/watch?v=t6RbanOhna4) to set up my connection to PostgreSQL.
 
-#3: Referenced [this tutorial](https://learndjango.com/tutorials/django-log-in-email-not-username) to create the error handling views.
+#3: Referenced [this tutorial](https://dev.to/riyanagueco/creating-a-custom-error-page-on-django-3nnd) to create the error handling views.
 
 #4: Referenced [this video](https://www.youtube.com/watch?v=OFKBep95lb4) to create a slide-out sidenav with a hamburger menu icon.
 
